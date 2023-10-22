@@ -1,0 +1,18 @@
+header {
+    position: relative; /* Change to relative positioning */
+}
+
+header img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 37px; /* Adjust left position */
+    top: -59px;
+}
+
+header h4 {
+    position: absolute;
+    top: -40px;
+    left: 90px; /* Adjust left position to match the image */
+    font-size: 1.6rem;
+}
