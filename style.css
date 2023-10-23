@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", "sans-serif";
+    
+}
+.hero{
+     height: 100vh;
+     width: min-content;
+     background-image: url('./assets/images/IMG_20230204_144608_175.jpg');
 }
 header{
     position: relative;
@@ -52,4 +58,5 @@ header h4{
     opacity: 0;
     transition: ease-in-out 0.5s;
 }
-    
+
+
