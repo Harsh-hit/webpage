@@ -30,3 +30,18 @@ window.addEventListener('DOMContentLoaded',()=>{
     
 })
 
+var icons = document.querySelectorAll('.fa');
+        var selectedIcon = null;
+        icons.forEach(function(icon) {
+        icon.addEventListener('click', function() {
+        if (selectedIcon) {
+          selectedIcon.style.color = 'black';
+          selectedIcon.style.border = 'white';
+        }
+        icon.style.color = '#f54e07';
+        icon.style.borderLeft = '4px solid #f54e07';
+        icon.style.transition = '0.2s';
+        selectedIcon = icon;
+      });
+    });
+
