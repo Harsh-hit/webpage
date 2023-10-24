@@ -6,6 +6,30 @@
     background-color: rgb(21, 21, 21);
     
 }
+/* For screens with a maximum width of 768px (typical mobile devices) */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    header {
+        height: 60px;
+        
+    }
+    h1 {
+        font-size: larger;
+        position: relative;
+        left: 50%;
+    }
+}
+
+/* For screens with a width between 769px and 1024px (typical tablet devices) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Adjust styles for tablets here */
+}
+
+/* For screens with a minimum width of 1025px (typical laptops and desktops) */
+@media (min-width: 1025px) {
+    /* Adjust styles for larger screens here */
+}
+
 .hero{
      height: 100vh;
      width: min-content;
