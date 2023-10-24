@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", "sans-serif";
+    background-color: rgb(21, 21, 21);
     
 }
 .hero{
@@ -27,13 +28,13 @@ header h4{
 
 /* splash screen */
 .intro{
-    position: fixed;
+    position: absolute;
     z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
     height: 100vh;
-    background-color: beige;
+    background-color: rgb(21, 21, 21);
     transition: 2s;
 }
 .logo-header{
