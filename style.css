@@ -83,12 +83,48 @@ header h4{
     opacity: 0;
     transition: ease-in-out 0.5s;
 }
-.navbar {
-    background:transparent;
-}
-  
-.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus{
-     color:black !important;
-}
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
 
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  /* background-image: url(https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container{
+  padding: 18px;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(21, 21, 21);
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container li{
+  list-style: none;
+  display: inline;
+}
+.container li a{
+  text-decoration: none;
+  padding: 14px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  color: #f2f2f2;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: all .3s ease-in;
+  font-family: "Play", sans-serif;
+}
+.container li a:hover{
+  background-color: rgb(21, 21, 21);
+  background-color: rgb(229, 236, 236);
+  color: rgb(21, 21, 21);
+}
 
