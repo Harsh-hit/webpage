@@ -83,5 +83,12 @@ header h4{
     opacity: 0;
     transition: ease-in-out 0.5s;
 }
+.navbar {
+    background:transparent;
+}
+  
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus{
+     color:black !important;
+}
 
 
