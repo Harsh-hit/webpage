@@ -97,7 +97,7 @@ body{
   background-repeat: no-repeat;
 }
 .container{
-  padding: 18px;
+  padding: 18px; 
   width: 100%;
   overflow: hidden;
   background-color: rgb(21, 21, 21);
@@ -115,7 +115,7 @@ body{
   padding: 14px 20px;
   font-size: 16px;
   border-radius: 4px;
-  color: #f2f2f2;
+  color: rgb(252, 248, 240);
   display: inline-block;
   text-align: center;
   letter-spacing: 1px;
@@ -124,7 +124,14 @@ body{
 }
 .container li a:hover{
   background-color: rgb(21, 21, 21);
-  background-color: rgb(229, 236, 236);
+  background-color: rgb(252, 248, 240);
   color: rgb(21, 21, 21);
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
 }
 
