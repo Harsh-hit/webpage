@@ -134,6 +134,13 @@ body{
     padding: 10px;
     text-align: center;
 }
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translate(0, -50%);
+  padding: 10px;
+}
 
 
 .gallery {
@@ -211,4 +218,13 @@ body{
     z-index: 2;
 
   }
+}
+.logo-bg{
+    position: absolute;
+    align-items:flex-end;
+    right: 0;
+    top: 300px;
+    .img{
+      opacity: -1;
+    }
 }
