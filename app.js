@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded',()=>{
 
         setTimeout(()=>{
             intro.style.top = '-100vh';
-        },1000)
+        },2000)
 
     })
     

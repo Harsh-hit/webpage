@@ -29,17 +29,17 @@
 @media (min-width: 1025px) {
     /* Adjust styles for larger screens here */
 }
-
+/* 
 .hero{
      height: 100vh;
      width: min-content;
      background-image: url('./assets/images/IMG_20230204_144608_175.jpg');
-}
+} */
 header{
     position: relative;
     left: 0;
     top: 0;
-    width: 1005;
+    width: 100%;
     height: 80px;
 }
 
@@ -85,18 +85,8 @@ header h4{
 }
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
 
-*{
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-}
-body{
-  font-family: sans-serif;
-  /* background-image: url(https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0); */
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 .container{
+  position: sticky;
   padding: 18px; 
   width: 100%;
   overflow: hidden;
@@ -140,6 +130,7 @@ body{
   left: 20px;
   transform: translate(0, -50%);
   padding: 10px;
+  
 }
 
 
@@ -147,7 +138,7 @@ body{
   --d: 20s;
   /* duration */
   display: grid;
-  width: 500px;
+  width: 400px;
   margin: auto;
 
 }
@@ -224,7 +215,12 @@ body{
     align-items:flex-end;
     right: 0;
     top: 300px;
-    .img{
-      opacity: -1;
-    }
+    z-index: -1;
+
+}
+.static-logo{
+  opacity: 0.5;
+  height: 500px;
+  right: 0px;
+  
 }
