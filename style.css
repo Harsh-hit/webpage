@@ -127,7 +127,7 @@ header h4{
 .vertical-center {
   position: absolute;
   top: 50%;
-  left: 20px;
+  left: 40px;
   transform: translate(0, -50%);
   padding: 10px;
   
@@ -228,8 +228,8 @@ header h4{
   position: absolute;
   top: 900px;
   left: 20px;
-  width: 700px;
-  border: 3px solid #fff;
+  width: 100%;
+
   padding: 20px;
 
 }
@@ -238,6 +238,6 @@ header h4{
   width: 50%;
   float: left;
   padding: 20px;
-  border: 2px solid red;
+  
 
 }
