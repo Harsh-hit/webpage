@@ -133,13 +133,16 @@ header h4{
   
 }
 
-
+/* about us gallery animation */
 .gallery {
   --d: 20s;
   /* duration */
   display: grid;
-  width: 400px;
+  width: 300px;
   margin: auto;
+  max-width: max-content;
+  
+  
 
 }
 
@@ -187,7 +190,7 @@ header h4{
 
 @keyframes slide {
   10% {
-    transform: translateX(120%) rotate(var(--r));
+    transform: translateX(50%) rotate(var(--r));
   }
   0%, 100%, 20% {
     transform: translateX(0%) rotate(var(--r));
