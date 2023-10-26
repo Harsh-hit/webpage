@@ -350,7 +350,6 @@ header h4{
   display: flex; /* Use flexbox for side-by-side layout */
   align-items: center; /* Vertically center the content */
 }
-
 .text-section {
   flex: 1; /* Let the text section take up available space */
   padding: 2rem; /* Add padding as needed */
