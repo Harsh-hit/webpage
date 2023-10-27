@@ -52,5 +52,5 @@ function scrollToImage(imageId) {
 }
 if (performance.navigation.type === 1) {
     // Redirect to the homepage URL
-    window.location.href = "./#";
+    window.location.href = "./#intro";
 }
