@@ -50,4 +50,7 @@ function scrollToImage(imageId) {
         return false; // Prevent the default link behavior
     }
 }
-
+if (performance.navigation.type === 1) {
+    // Redirect to the homepage URL
+    window.location.href = "./#";
+}
