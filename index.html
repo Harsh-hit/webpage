@@ -30,10 +30,10 @@
         <img src="./assets/images/CCD logo white version.png" style="height: 50px;width: auto; top: -10px;"/>
 		<ul style="position: absolute; right: 0;">
 			<li><a href="#">HOME</a></li>
-			<li><a  onclick="scrollToSection('#about-us', 150)">ABOUT</a></li>
+			<li><a onclick="scrollToSection('#about-us', 150)">ABOUT</a></li>
             <li><a onclick="scrollToSection('#our-events', 150)">EVENTS</a></li>
 			<li><a onclick="scrollToSection('#our-segments', 150)">SEGMENTS</a></li>
-			<li><a href="#">CONTACT US</a></li>
+            <li><a onclick="scrollToSection('#our-events-element2', 0)">CONTACT US</a></li>
 		</ul>
 	</div>
     <div class="vertical-center"  >
@@ -256,15 +256,36 @@
               </div>
             </div>
           </label>
+          <input type="radio" name="slide" id="c5">
+          <label for="c5" class="card">
+            <div class="row">
+              <div class="icon">5</div>
+              <div class="description">
+                <a href="https://www.instagram.com/p/CxIWZnohhIx/?img_index=1" style="color: rgb(252, 248, 240); text-decoration: none;"><h4>Monday Musings</h4>
+                <p>Our Bi-weekly stories showcasing literary talent</p></a>
+              </div>
+            </div>
+          </label>
         </div>
       </div>
       
       <!-- contact us -->
+        <div  class="our-events-container" style="position: absolute; top: 5600px; font-size: 50px;">
+        
+            <h1 class="our-events-element2"  style="position: relative; color:  rgb(252, 248, 240); top: 50%;">
+                Contact US
+            </h1>
+            
+            
+        </div>
+
+    
+   
       
 
-    <!-- Footer -->
+    
      
-        <div class="contacts-container">
+        <div class="contacts-container" id="our-events-element2">
             <div class="row">
                 <div class="col-md-8 offset-md-2">
                     <div class="social-links">
@@ -290,7 +311,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    
     
         
 
