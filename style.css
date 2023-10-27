@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Poppins", "sans-serif";
     background-color: rgb(21, 21, 21);
+
     
 }
 /* For screens with a maximum width of 768px (typical mobile devices) */
@@ -218,6 +219,7 @@ header h4{
   opacity: 0.5;
   height: 500px;
   right: -200px;
+  overflow: -moz-hidden-unscrollable;
   
 }
 .about-us{
@@ -453,3 +455,4 @@ input:checked + label .description {
   background-image: url('./assets/images/Recommends.png');
 }
 
+/* contact us */

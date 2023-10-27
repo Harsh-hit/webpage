@@ -30,3 +30,24 @@ window.addEventListener('DOMContentLoaded',()=>{
     
 })
 
+function scrollToSection(sectionId, offset) {
+    const targetSection = document.querySelector(sectionId);
+    if (targetSection) {
+        window.scrollTo({
+            top: targetSection.offsetTop - offset,
+            behavior: 'smooth'
+        });
+    }
+}
+function scrollToImage(imageId) {
+    const targetImage = document.getElementById(imageId);
+    if (targetImage) {
+        targetImage.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',  // Align the top of the target image with the top of the viewport
+        });
+
+        return false; // Prevent the default link behavior
+    }
+}
+

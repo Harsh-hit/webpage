@@ -29,9 +29,9 @@
         <img src="./assets/images/CCD logo white version.png" style="height: 50px;width: auto; top: -10px;"/>
 		<ul style="position: absolute; right: 0;">
 			<li><a href="#">HOME</a></li>
-			<li><a href="#about-us">ABOUT</a></li>
-            <li><a href="#our-events">EVENTS</a></li>
-			<li><a href="#our-segments">SEGMENTS</a></li>
+			<li><a  onclick="scrollToSection('#about-us', 150)">ABOUT</a></li>
+            <li><a onclick="scrollToSection('#our-events', 150)">EVENTS</a></li>
+			<li><a onclick="scrollToSection('#our-segments', 150)">SEGMENTS</a></li>
 			<li><a href="#">CONTACT US</a></li>
 		</ul>
 	</div>
@@ -87,7 +87,7 @@
     <!-- EVENTS -->
 
 
-    <div class="our-events-container" id= "our-events" style="position: absolute; top: 1600px; font-size: 80px;">
+    <div class="our-events-container" id= "our-events" style="position: absolute; top: 1600px; font-size: 50px;">
         <div class = "our-events-element1" style="left: 0px;">
             <img class="static-logo2" src="./assets/images/CCD logo white version.png" style="position: absolute; left: -200px;"/> 
         </div>
@@ -145,9 +145,10 @@
                             
                         </div>
                         <div class = "slider-nav">
-                            <a href="#slide-4"></a>
-                            <a href="#slide-5"></a>
-                            <a href="#slide-6"></a>
+                            <a  href="#slide-6"></a>
+                            <a  href="#slide-4"></a>
+                            <a  href="#slide-5"></a>
+                            
                         </div>
                     </div>
                 </section>
@@ -190,8 +191,8 @@
                             <img src="assets/images/IMG_7099.jpeg" id = "slide-9" alt="">
                         </div>
                         <div class = "slider-nav">
-                            <a href="#slide-7"></a>
                             <a href="#slide-8"></a>
+                            <a href="#slide-7"></a>                            
                             <a href="#slide-9"></a>
                         </div>
                     </div>
@@ -201,12 +202,12 @@
     </div>
 
     <!-- Segments -->
-    <div class="our-events-container" id= "our-segments" style="position: absolute; top: 4200px; font-size: 80px;">
+    <div class="our-events-container" id= "our-segments" style="position: absolute; top: 4200px; font-size: 50px;">
         <h1 class="our-events-element1" style="position: relative; color:  rgb(252, 248, 240); top: 50%;">
             Segments
         </h1>
         <div class = "our-events-element2">
-            <img class="static-logo2" src="./assets/images/CCD logo white version.png" style="position: absolute; right: -200px;"/> 
+            <img class="static-logo2" src="./assets/images/CCD logo white version.png" style="position: absolute; right: -200px; overflow: hidden;"/> 
         </div>  
     </div>
     <div class="wrapper">
@@ -256,6 +257,51 @@
           </label>
         </div>
       </div>
+      
+      <!-- contact us -->
+      <script src="https://kit.fontawesome.com/61d5eeebab.js" crossorigin="anonymous"></script>
+    
+  <div class="contacts-container">
+    <div class="social-icons">
+        <div class="social facebook">
+        <div class="tooltip">Facebook</div>
+        <div class="icon">
+            <i class="fa-brands fa-facebook-f"></i>
+        </div>
+        </div>
+        <div class="social twitter">
+        <div class="tooltip">Twitter</div>
+        <div class="icon">
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        </div>
+        <div class="social instagram">
+        <div class="tooltip">Instagram</div>
+        <div class="icon">
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        </div>
+        <div class="social github">
+        <div class="tooltip">GitHub</div>
+        <div class="icon">
+            <i class="fa-brands fa-github"></i>
+        </div>
+        </div>
+        <div class="social youtube">
+        <div class="tooltip">YouTube</div>
+        <div class="icon">
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        </div>
+        <div class="social tiktok">
+        <div class="tooltip">TikTok</div>
+        <div class="icon">
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
+        </div>
+    </div>
+    </div>
+      
 
 
 
