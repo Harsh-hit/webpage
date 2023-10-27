@@ -9,15 +9,7 @@
 /* For screens with a maximum width of 768px (typical mobile devices) */
 @media (max-width: 768px) {
     /* Adjust styles for smaller screens here */
-    header {
-        height: 60px;
-        
-    }
-    h1 {
-        font-size: larger;
-        position: relative;
-        left: 50%;
-    }
+
 }
 
 /* For screens with a width between 769px and 1024px (typical tablet devices) */
