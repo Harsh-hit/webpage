@@ -79,10 +79,12 @@ a:hover {
   color: #000000;
   font-family: Sans-Serif;
   background-color: #f6f6f6;
+  position: fixed;
+  z-index: 100;
 }
 
 .container {
-  display: inline-block;
+
   position: fixed;
   left: 0px;
   width: 100%;
@@ -94,6 +96,7 @@ a:hover {
   top: 5px;
   height: 40px;
   width: auto;
+  z-index: 20;
 }
 
 .dd-button {
@@ -106,7 +109,7 @@ a:hover {
   cursor: pointer;
   white-space: nowrap;
   right: 0px;
-  z-index: 0;
+  z-index: top;
 }
 
 .dd-button:after {
@@ -829,6 +832,8 @@ p a {
     color: #000000;
     font-family: Sans-Serif;
     background-color: #f6f6f6;
+    position: fixed;
+    z-index: 100;
   }
   
   .container {
@@ -1551,6 +1556,13 @@ p a {
       transition: ease-in-out 0.5s;
   }
   @import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+  .navbar-wrapper{
+    color: #000000;
+    font-family: Sans-Serif;
+    background-color: #f6f6f6;
+    position: fixed;
+    z-index: 100;
+  }
   
   .container{
     
