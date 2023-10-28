@@ -25,23 +25,37 @@
             </div>  -->
         </h1>
     </div>
-    
-	<div class="container" style="position: fixed; z-index: 9;" id="#intro">
-        <img src="./assets/images/CCD logo white version.png" style="height: 50px;width: auto; top: -10px;"/>
-		<ul style="position: absolute; right: 0;">
-			<li><a href="#">HOME</a></li>
-			<li><a onclick="scrollToSection('#about-us', 150)">ABOUT</a></li>
-            <li><a onclick="scrollToSection('#our-events', 150)">EVENTS</a></li>
-			<li><a onclick="scrollToSection('#our-segments', 150)">SEGMENTS</a></li>
-            <li><a onclick="scrollToSection('#our-events-element2', 0)">CONTACT US</a></li>
-		</ul>
-	</div>
-    <div class="vertical-center"  >
-        <p style="color: rgb(252, 248, 240); font-size : 20px; ">We are</p>
-        <h2 style="color: rgb(252, 248, 240); font-size: 50px;">
+
+        
+    <div class = "navbar-wrapper" >
+        <label class="container" style="position: fixed;">
+            <img class = "navbar-logo" src="./assets/images/CCD logo white version.png" />
+            <div class="dd-button">
+            ☰
+            </div>
+        
+            <input type="checkbox" class="dd-input" id="test">
+        
+            <ul class="nav-menu" style = "position: absolute; right: 0px;">
+                    <li><a href="#">HOME</a></li>
+                    <li><a onclick="scrollToSection('#about-us', 150)">ABOUT</a></li>
+                    <li><a onclick="scrollToSection('#our-events', 150)">EVENTS</a></li>
+                    <li><a onclick="scrollToSection('#our-segments', 150)">SEGMENTS</a></li>
+                    <li><a onclick="scrollToSection('#our-events-element2', 0)">CONTACT US</a></li>
+                </ul>
+            
+        </label>
+        
+
+
+    </div>
+        
+    <div class="vertical-center">
+        <p >We are</p>
+        <h2 >
             Literary Brains
         </h2>
-        <h2 style="color: rgb(252, 248, 240); font-size: 50px;">
+        <h2>
             at work.
         </h2>
     </div>
