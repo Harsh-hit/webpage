@@ -1823,7 +1823,7 @@ p a {
   }
   
   .about-us p{
-    font-size: 12px;
+    font-size: 20px;
     color: rgb(252, 248, 240);
   }
   
@@ -1871,7 +1871,7 @@ p a {
     right:0;
     top: -30px;
     opacity: 0.5;
-    width: 300px;
+
   } 
   
   .event-container{
