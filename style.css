@@ -1777,13 +1777,11 @@ p a {
   .about-us-element h1{
     font-size: 40px;
     color: rgb(252, 248, 240);
-    text-align: center;
   }
   
   .about-us p{
     font-size: 12px;
     color: rgb(252, 248, 240);
-    text-align: center;
   }
   
   /* EVENTS */
