@@ -203,6 +203,13 @@ a:hover {
   right: 0%;
   /* overflow: -moz-hidden-unscrollable; */ 
 }
+.static-logo3{
+  position: absolute;
+  right:0;
+  top: -30px;
+  opacity: 0.5;
+  width: 150px;
+}
 .gallery {
   --d: 20s;
   /* duration */
@@ -319,7 +326,7 @@ a:hover {
 .about-us-element h1{
   font-size: 40px;
   color: rgb(252, 248, 240);
-  text-align: center;
+  text-align: center
 }
 
 .about-us p{
@@ -331,7 +338,7 @@ a:hover {
 /* EVENTS */
 .our-events-container{
   position: absolute;
-  top: 1800px;
+  top: 1650px;
   left: 20px;
   width: 100%;
   padding: 20px;
@@ -344,6 +351,7 @@ a:hover {
 .our-events-element1{
   position: absolute;
   width: 10%;
+  
 
   float: left;
   padding: 20px;
@@ -359,6 +367,7 @@ a:hover {
   position: relative;
   color:  rgb(252, 248, 240);
   top: 50%;
+  font-size: 50px;
 
   
 }
@@ -370,11 +379,11 @@ a:hover {
   
 }
 .static-logo2{
-  position: absolute;
+  position: relative;
   top: -50px;
-  left: -23px;
   opacity: 0.5;
   width: 150px;
+  left:-35px;
 } 
 
 .event-container{
@@ -602,9 +611,43 @@ a:hover {
 /* EVENT CARDS END */
 
 /* Segments */
+.segments-container{
+  position: absolute;
+  top: 4500px;
+
+  width: 100%;
+  font-size: 14px;
+
+  padding: 20px;
+
+}
+
+.segments-element1{
+  width: 10%;
+  float: left;
+  
+
+  top: 50%;
+  
+} 
+.segment-element2{
+  width: 60%;
+  float: right;
+  padding: 20px;
+  top: 50%;
+  font-size: 80px;
+  
+}
+.segment-element3{
+  width: 60%;
+  float: center;
+  padding: 20px;
+  top: 50%;
+  
+}
 .wrapper {
   position: absolute;
-  top: 4600px;
+  top: 4900px;
   align-items: center;
   display: flex;
   height: 100vh;
@@ -1787,7 +1830,7 @@ p a {
   /* EVENTS */
   .our-events-container{
     position: absolute;
-    top: 900px;
+    top: 1600px;
     left: 20px;
     width: 100%;
   
@@ -1807,6 +1850,7 @@ p a {
     float: right;
     padding: 20px;
     top: 50%;
+    font-size: 80px;
     
   }
   .our-events-element3{
@@ -1817,10 +1861,17 @@ p a {
     
   }
   .static-logo2{
-    position: relative;
-    top: -50px;
+    position: absolute;
+    left:-23px;
     opacity: 0.5;
-    width: 30;
+    width: 30%;
+  } 
+  .static-logo3{
+    position: absolute;
+    right:0;
+    top: -30px;
+    opacity: 0.5;
+    width: 300px;
   } 
   
   .event-container{
@@ -2045,6 +2096,39 @@ p a {
   /* EVENT CARDS END */
   
   /* Segments */
+  .segments-container{
+    position: absolute;
+    top: 4200px;
+    left: 20px;
+    width: 100%;
+    font-size: 50px;
+  
+    padding: 20px;
+  
+  }
+  
+  .segments-element1{
+    width: 10%;
+    padding: 20px;
+    top: 50%;
+    
+  } 
+  .segment-element2{
+    width: 100%;
+    float: right;
+    padding: 20px;
+    top: 50%;
+    font-size: 80px;
+    
+  }
+  .segment-element3{
+    width: 60%;
+    float: center;
+    padding: 20px;
+    top: 50%;
+    
+  }
+
   .wrapper {
     position: absolute;
     top: 4600px;
