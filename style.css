@@ -2264,6 +2264,28 @@ p a {
   }
   
   /* contact us */
+  .contact-container{
+    position: absolute; 
+    top: 5600px; 
+    font-size: 50px;
+
+  }
+  
+  
+  .contact-element3{
+    width: 100%;
+    float: center;
+    padding: 20px;
+    position: relative; 
+    color:  rgb(252, 248, 240);
+    top: 50%;
+    
+  }
+  .contact-element3 p{
+    position: absolute; 
+    color:  rgb(252, 248, 240); font-size: 20px;
+    left: 40px;
+  }
   .contacts-container {
       position: absolute;
       top: 6000px;
