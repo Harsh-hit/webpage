@@ -615,9 +615,8 @@ a:hover {
   top: 4500px;
 
   width: 100%;
-  font-size: 14px;
+  font-size: 20px;
 
-  padding: 20px;
 
 }
 
@@ -646,83 +645,86 @@ a:hover {
 }
 .wrapper {
   position: absolute;
-  top: 4900px;
-  align-items: center;
+  top: 4800px;
+  /* Adjust to your preferred position */
   display: flex;
-  height: 100vh;
-  justify-content: center;
-  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 50px;
 }
 
 .card-container {
   display: flex;
-  flex-wrap: nowrap;
-  height: 200px;
-  justify-content: start;
+  flex-direction: column;
+  height: 450px; /* Consider adjusting the container's height */
+  justify-content: center;
+  margin: 20px 0; /* Spacing between cards */
 }
 
 .card {
   align-items: flex-end;
   background-size: cover;
-  border-radius: .75rem;
   border-radius: 2rem;
-  box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
   cursor: pointer;
   display: flex;
-  margin: 0 10px;
+  margin: 10px 0; /* Spacing between cards */
   overflow: hidden;
-  transition: .6s cubic-bezier(.28,-0.03,0,.99);
-  width: 20px;
+  transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+  height: 80px; /* Initial card height */
+  width: 100%; /* Full width */
 }
 
 .card > .row {
-  color: white;
+  color: transparent;
   display: flex;
   flex-wrap: nowrap;
-}
-.card .row{
   position: relative;
-  top: 60px;
+  top: 65px;
+  
+
 
 
 }
+
 .card > .row > .icon {
   display: none;
-
-
-  /* align-items: center;
-
-  border-radius: 60%;
+  align-items: center;
+  background: #223;
+  border-radius: 50%;
   color: white;
   display: flex;
   justify-content: center;
-  margin: 5px;
-  width: 100px; */
+  margin: 15px;
+  height: 50px; /* Adjusted height */
+   width: 50px; 
 }
 
 .card > .row > .description {
-
   display: flex;
   flex-direction: column;
-  height: 80px;
   justify-content: center;
   opacity: 0;
   overflow: hidden;
-  transform: translateY(10px);
-  transition: all .3s ease;
-  transition-delay: .3s;
-  width: 520px;
+  transition: all 0.3s ease;
+  transition-delay: 0.3s;
+
+  height: 80px;
+  width: 100%;
+ /* Adjust as necessary */
+  text-align: center; /* Center text */
+
+
 }
 
 .description p {
   color: #b0b0ba;
-  padding-top: 5px;
   font-size: 8px;
 }
 
 .description h4 {
   text-transform: uppercase;
-  font-size: 10px;
 }
 
 input {
@@ -730,13 +732,14 @@ input {
 }
 
 input:checked + label {
-  width: 100px;
-}
+  height: 450px; /* Expanded height */
+  }
 
-input:checked + label .description {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-}
+  input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+
 
 .card[for="c1"] {
   background-image: url('./assets/images/spotlight.png');
@@ -760,7 +763,7 @@ input:checked + label .description {
 /* contact us */
 .contact-container{
   position: absolute; 
-  top: 5800px; 
+  top: 5600px; 
   font-size: 20px;
 
 }
