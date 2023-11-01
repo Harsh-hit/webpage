@@ -338,7 +338,6 @@ a:hover {
 .our-events-container{
   position: absolute;
   top: 1650px;
-  left: 20px;
   width: 100%;
   padding: 20px;
   font-size: 20px;
@@ -613,6 +612,7 @@ a:hover {
 .segments-container{
   position: absolute;
   top: 4500px;
+  
 
   width: 100%;
   font-size: 20px;
@@ -635,6 +635,7 @@ a:hover {
   top: 50%;
   font-size: 80px;
   
+  
 }
 .segment-element3{
   width: 60%;
@@ -642,9 +643,11 @@ a:hover {
   padding: 20px;
   top: 50%;
   
+  
 }
 .wrapper {
   position: absolute;
+  /* border: red solid; */
   top: 4800px;
   /* Adjust to your preferred position */
   display: flex;
