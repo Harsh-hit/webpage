@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  background-color: #121212;
+}
+
+.first_half{
+  color: #f1b24a;
+} 
+.image {
+  display: block;
+  width: 100%; /* Width = 100% / number of images */
+  height: 400px;
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.crescentia_container {
+  margin: 6% 0 0 10%;
+  position: relative;
+  width: 50%;
+  height: 400px;
+
+}
+
+.crescentia_overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 1);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: width 0.34s ease;
+}
+
+.crescentia_container:hover .crescentia_overlay {
+  width: 85%;
+}
+
+h1 {
+  width: 100%;
+  margin-top: 10%;
+  margin-left: 5%;
+  color: white;
+  font-size: 4vw;
+  position: absolute;
+  text-align: left;
+}
+
+h2 {
+  text-align: left;
+  color: white;
+  font-size: 1.2vw;
+  margin: 28% 0 0 7%;
+  width: 70%;
+  letter-spacing: 3px;
+  line-height: 1.5em;
+}
+
+.literati_container {
+    margin: 6% 0 0 50%;
+    position: relative;
+    width: 50%;
+    height: 400px;
+
+}
+
+.image {
+    display: block;
+    width: 90%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.literati_overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 1);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: width 0.2s ease;
+}
+
+.literati_container:hover .literati_overlay {
+    width: 95%;
+}
+
+h1 {
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 5%;
+    color: white;
+    font-size: 4vw;
+    position: absolute;
+    text-align: left;
+}
+
+h2 {
+    text-align: left;
+    color: white;
+    font-size: 1.2vw;
+    margin: 28% 0 0 7%;
+    width: 70%;
+    letter-spacing: 3px;
+    line-height: 1.5em;
+} 
+
+ 
+.book_container {
+    margin: 6% 0 10% 10%;
+    position: relative;
+    width: 50%;
+    height: 400px;
+}
+
+.image {
+    display: block;
+    width: 90%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.book_overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 1);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: width 0.34s ease;
+}
+
+.book_container:hover .book_overlay {
+    width: 85%;
+}
+
+h1 {
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 5%;
+    color: white;
+    font-size: 4vw;
+    position: absolute;
+    text-align: left;
+}
+
+h2 {
+    text-align: left;
+    color: white;
+    font-size: 1.2vw;
+    margin: 28% 0 0 7%;
+    width: 70%;
+    letter-spacing: 3px;
+    line-height: 1.5em;
+} 
+

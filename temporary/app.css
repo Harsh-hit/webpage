@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: "Poppins", "sans-serif";
+    font-weight: 600;  
+}
+
+
+/* splash screen */
+.intro {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    transition: 2s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    color: white;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+/*splash screen ends */
+
+header {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+
+header h4 {
+    position: absolute;
+    left: 10%;
+    bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    padding: 10px 0;
+}
+
+nav {
+    position: absolute;
+    left: 650px;
+    top: 15px;
+    width: 60%;
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 30px;
+    position: relative;
+}
+
+nav a {
+    color: aliceblue;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: aliceblue;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 6.5px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.logo-top{
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 40%;
+}
+.logo-top img{
+    width: 20%;
+    height: 70px;
+}
+
+.literary-brains {
+    color: aliceblue;
+    position: absolute;
+    top: 200px;
+    left: 90px;
+    font-size: 35px;
+}
+
+/*about us container*/
+
+.about-us-container {
+    color: aliceblue;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 800px;
+    left: 50px;
+    margin: 50px;
+    font-size: 35px;
+}
+
+.about-us-container{
+    width: 50%;
+}
+
+.about-us-container p{
+    width: 450px;
+    font-size: 20px;
+}
+.about-us-container img{
+    position: relative;
+    top: -325px;
+    left: 600px;
+    width: 100%;
+}
+
+.contact-info-container h1{
+    color:aliceblue;
+    position: relative;
+    top: 1150px;
+    left: 50px;
+}
