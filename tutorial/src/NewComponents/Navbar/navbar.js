@@ -6,13 +6,12 @@ const Navi = () => {
         <header className='main'>
         <div className="container">
           <h1 className="logo"></h1>
-    
           <nav>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a>Home</a></li>
+              <li><a>Team</a></li>
+              <li><a>Events</a></li>
+              <li><a>Contact Us</a></li>
             </ul>
           </nav>
         </div>

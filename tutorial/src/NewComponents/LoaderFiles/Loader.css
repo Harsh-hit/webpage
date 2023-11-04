@@ -4,9 +4,6 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-
-
-
 .intro {
     position: fixed;
     z-index: 1;
