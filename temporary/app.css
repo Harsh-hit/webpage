@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     background-color: black;
@@ -7,7 +7,6 @@
 }
 
 
-/* splash screen */
 .intro {
     position: fixed;
     z-index: 1;
@@ -45,7 +44,7 @@
     opacity: 0;
     transition: ease-in-out 0.5s;
 }
-/*splash screen ends */
+
 
 header {
     position: absolute;
@@ -139,7 +138,6 @@ nav a:hover::before {
     font-size: 35px;
 }
 
-/*about us container*/
 
 .about-us-container {
     color: aliceblue;
@@ -172,4 +170,132 @@ nav a:hover::before {
     position: relative;
     top: 1150px;
     left: 50px;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #121212;
+    height: 400vh;
+    display: grid;
+    place-items: center;
+}
+
+.first_half {
+    color: #f1b24a;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    /* Width = 100% / number of images */
+    height: 400px;
+    object-fit: cover;
+    /* Maintain aspect ratio */
+}
+
+.crescentia_container {
+    /* margin: 6% 0 0 10%; */
+    position: absolute;
+    left: 40px;
+    width: 50%;
+    height: 400px;
+
+}
+
+.crescentia_overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.70);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: width 0.34s ease;
+}
+
+.crescentia_container:hover .crescentia_overlay {
+    width: 100%;
+}
+
+h1 {
+    width: 100%;
+    margin-top: -38%;
+    margin-left: 120%;
+    color: white;
+    font-size: 4vw;
+    position: absolute;
+    text-align: left;
+}
+
+h2 {
+    text-align: justify;
+    color: white;
+    font-size: 1.2vw;
+    margin: 12% 0 0 13%;
+    width: 70%;
+    letter-spacing: 3px;
+    line-height: 1.5em;
+}
+
+.slider {
+    width: 100%;
+    max-width: 650px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.slide {
+    width: 100%;
+    max-width: 650px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+}
+
+.btn:active {
+    transform: scale(1.1);
+}
+
+.btn-prev {
+    top: 45%;
+    left: 2%;
+}
+
+.btn-next {
+    top: 45%;
+    right: 2%;
+}
+
+.crescentia_container:hover .btn-prev {
+    z-index: 3;
+}
+
+.crescentia_container:hover .btn-next {
+    z-index: 3;
 }

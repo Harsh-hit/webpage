@@ -1,31 +1,49 @@
-let intro= document.querySelector(".intro")
-let logo = document.querySelector(".logo-header")
-let logoSpan = document.querySelectorAll(".logo")
+"use strict";
+// Select all slides
+const slides = document.querySelectorAll(".slide");
 
-window.addEventListener('DOMContentLoaded',()=>{
+// loop through slides and set each slides translateX
+slides.forEach((slide, indx) => {
+  slide.style.transform = `translateX(${indx * 100}%)`;
+});
 
-    setTimeout(()=>{
-        logoSpan.forEach((span,idx)=>{
-            setTimeout(()=>{
-                 span.classList.add('active');
-            },(idx+1)*200)
+// select next slide button
+const nextSlide = document.querySelector(".btn-next");
 
-        })
-        setTimeout(()=>{
-            logoSpan.forEach((span,idx)=>{
-                span.classList.remove("active");
-                span.classList.add("fade");
+// current slide counter
+let curSlide = 0;
+// maximum number of slides
+let maxSlide = slides.length - 1;
 
-            },(idx+1)*500)   
-            
+// add event listener and navigation functionality
+nextSlide.addEventListener("click", function () {
+  // check if current slide is the last and reset current slide
+  if (curSlide === maxSlide) {
+    curSlide = 0;
+  } else {
+    curSlide++;
+  }
 
+  //   move slide by -100%
+  slides.forEach((slide, indx) => {
+    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+  });
+});
 
-        },2000); 
+// select next slide button
+const prevSlide = document.querySelector(".btn-prev");
 
-        setTimeout(()=>{
-            intro.style.top = '-100vh';
-        },2000)
+// add event listener and navigation functionality
+prevSlide.addEventListener("click", function () {
+  // check if current slide is the first and reset current slide to last
+  if (curSlide === 0) {
+    curSlide = maxSlide;
+  } else {
+    curSlide--;
+  }
 
-    })
-    
-})
+  //   move slide by 100%
+  slides.forEach((slide, indx) => {
+    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+  });
+});

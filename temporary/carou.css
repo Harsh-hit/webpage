@@ -29,7 +29,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.70);
   overflow: hidden;
   width: 0;
   height: 100%;
@@ -37,13 +37,13 @@ body {
 }
 
 .crescentia_container:hover .crescentia_overlay {
-  width: 85%;
+  width: 100%;
 }
 
 h1 {
   width: 100%;
-  margin-top: 10%;
-  margin-left: 5%;
+  margin-top: 15%;
+  margin-left: 12%;
   color: white;
   font-size: 4vw;
   position: absolute;
@@ -54,111 +54,76 @@ h2 {
   text-align: left;
   color: white;
   font-size: 1.2vw;
-  margin: 28% 0 0 7%;
+  margin: 28% 0 0 12%;
   width: 70%;
   letter-spacing: 3px;
   line-height: 1.5em;
 }
 
-.literati_container {
-    margin: 6% 0 0 50%;
-    position: relative;
-    width: 50%;
-    height: 400px;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.image {
-    display: block;
-    width: 90%;
-    height: 400px;
-    position: relative;
-    overflow: hidden;
+body {
+  height: 400vh;
+  display: grid;
+  place-items: center;
 }
 
-.literati_overlay {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 1);
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: width 0.2s ease;
+.slider {
+  width: 100%;
+  max-width: 650px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
-.literati_container:hover .literati_overlay {
-    width: 95%;
+.slide {
+  width: 100%;
+  max-width: 650px;
+  height: 400px;
+  position: absolute;
+  transition: all 0.5s;
 }
 
-h1 {
-    width: 100%;
-    margin-top: 10%;
-    margin-left: 5%;
-    color: white;
-    font-size: 4vw;
-    position: absolute;
-    text-align: left;
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-h2 {
-    text-align: left;
-    color: white;
-    font-size: 1.2vw;
-    margin: 28% 0 0 7%;
-    width: 70%;
-    letter-spacing: 3px;
-    line-height: 1.5em;
-} 
-
- 
-.book_container {
-    margin: 6% 0 10% 10%;
-    position: relative;
-    width: 50%;
-    height: 400px;
+.btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 18px;
+}
+.btn:active {
+  transform: scale(1.1);
+}
+.btn-prev {
+  top: 45%;
+  left: 2%;
 }
 
-.image {
-    display: block;
-    width: 90%;
-    height: 400px;
-    position: relative;
-    overflow: hidden;
+.btn-next {
+  top: 45%;
+  right: 2%;
 }
 
-.book_overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 1);
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: width 0.34s ease;
+.crescentia_container:hover .btn-prev{
+  z-index: 3;
 }
 
-.book_container:hover .book_overlay {
-    width: 85%;
+.crescentia_container:hover .btn-next{
+  z-index: 3;
 }
-
-h1 {
-    width: 100%;
-    margin-top: 10%;
-    margin-left: 5%;
-    color: white;
-    font-size: 4vw;
-    position: absolute;
-    text-align: left;
-}
-
-h2 {
-    text-align: left;
-    color: white;
-    font-size: 1.2vw;
-    margin: 28% 0 0 7%;
-    width: 70%;
-    letter-spacing: 3px;
-    line-height: 1.5em;
-} 
-
