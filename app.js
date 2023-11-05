@@ -104,7 +104,8 @@ function next() {
   transforms.push(transforms.shift());
 }
   
-document.getElementById('carousel').onclick = function() {
+document.getElementById('.
+').onclick = function() {
   next();  
 };
 
