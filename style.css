@@ -264,14 +264,15 @@ a:hover {
 .card1 {
   position: absolute;
   left: 30%;
-  width: 95px;
-  height: 95px;
+  width: 125px;
+  height: 125px;
   transform-style: preserve-3d;
   transition: 1s;
+  overflow:visible;
 
 }
 .card1 img{
-  height: 95px;
+  height: 125px;
 
 }
 .card1:nth-child(1) {
