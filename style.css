@@ -77,9 +77,9 @@ a:hover {
 
 /* Dropdown */
 .navbar-wrapper{
-  color: #000000;
+  color: rgb(21, 21, 21);
   font-family: Sans-Serif;
-  background-color: #f6f6f6;
+  background-color: rgb(21, 21, 21);
   position: fixed;
   z-index: 100;
 }
@@ -103,31 +103,21 @@ a:hover {
 .dd-button {
   position: absolute;
   display: inline-block;
-  border: 1px solid  #cccccc;;
+  border: 0.5px  orange;
+  color: white;
   border-radius: 4px;
-  padding: 10px 30px 10px 20px;
-  background-color: #ffffff;
+  padding: 10px 10px 15px;
+  background-color: rgb(21, 21, 21);
   cursor: pointer;
   white-space: nowrap;
   right: 0px;
   z-index: top;
 }
 
-.dd-button:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
-  width: 0; 
-  height: 0; 
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid  #cccccc;;
-}
+
 
 .dd-button:hover {
-  background-color: #eeeeee;
+  background-color: rgb(21, 21, 21);
 }
 
 
@@ -268,7 +258,7 @@ a:hover {
   height: 125px;
   transform-style: preserve-3d;
   transition: 1s;
-  overflow:visible;
+
 
 }
 .card1 img{
