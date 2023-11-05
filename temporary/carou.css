@@ -5,27 +5,20 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-family: 'Work Sans', sans-serif;
   background-color: #121212;
+  height: 400vh;
+  display: grid;
+  place-items: center;
 }
 
-.first_half{
-  color: #f1b24a;
-} 
-.image {
-  display: block;
-  width: 100%; /* Width = 100% / number of images */
-  height: 400px;
-  object-fit: cover; /* Maintain aspect ratio */
-}
-
-.crescentia_container {
-  margin: 6% 0 0 10%;
-  position: relative;
+.literati_container {
+  position: absolute;
+  top: 600px;
+  right: 140px; /* Change 'left' to 'right' */
   width: 50%;
   height: 400px;
-
 }
 
-.crescentia_overlay {
+.literati_overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -36,52 +29,50 @@ body {
   transition: width 0.34s ease;
 }
 
-.crescentia_container:hover .crescentia_overlay {
+.literati_container:hover .literati_overlay {
   width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  /* Width = 100% / number of images */
+  height: 400px;
+  object-fit: cover;
+  /* Maintain aspect ratio */
 }
 
 h1 {
   width: 100%;
-  margin-top: 15%;
-  margin-left: 12%;
+  margin-top: -38%;
+  margin-left: -60%; /* Remove this rule or adjust margin-left */
   color: white;
   font-size: 4vw;
   position: absolute;
   text-align: left;
+  left: 40px; /* Add this rule to position 'h1' on the left */
 }
 
 h2 {
-  text-align: left;
+  text-align: justify;
   color: white;
   font-size: 1.2vw;
-  margin: 28% 0 0 12%;
+  margin: 12% 0 0 13%;
   width: 70%;
   letter-spacing: 3px;
   line-height: 1.5em;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  height: 400vh;
-  display: grid;
-  place-items: center;
-}
-
-.slider {
+.literati_slider {
   width: 100%;
   max-width: 650px;
-  height: 450px;
+  height: 400px;
   position: relative;
   overflow: hidden;
   border-radius: 15px;
 }
 
-.slide {
+.literati_slide {
   width: 100%;
   max-width: 650px;
   height: 400px;
@@ -89,13 +80,13 @@ body {
   transition: all 0.5s;
 }
 
-.slide img {
+.literati_slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.btn {
+.btn1 {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -107,23 +98,25 @@ body {
   background-color: #fff;
   font-size: 18px;
 }
-.btn:active {
+
+.btn1:active {
   transform: scale(1.1);
 }
-.btn-prev {
+
+.btn1-prev {
   top: 45%;
   left: 2%;
 }
 
-.btn-next {
+.btn1-next {
   top: 45%;
   right: 2%;
 }
 
-.crescentia_container:hover .btn-prev{
+.literati_container:hover .btn1-prev {
   z-index: 3;
 }
 
-.crescentia_container:hover .btn-next{
+.literati_container:hover .btn1-next {
   z-index: 3;
 }
