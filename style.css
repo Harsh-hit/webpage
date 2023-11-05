@@ -306,6 +306,7 @@ a:hover {
   z-index: 0;
 
 
+
 }
 
 .our-events-element1{
@@ -482,10 +483,9 @@ a:hover {
   top: 4800px;
   /* Adjust to your preferred position */
 
-
   margin: auto;
   width: 100%;
-  padding: 10px;
+  padding: 50px;
   
 }
 
@@ -1015,6 +1015,7 @@ width: 100%;
 padding: 20px;
 font-size: 20px;
 z-index: 0;
+overflow: hidden;
 
 
 }
@@ -1286,7 +1287,7 @@ background-color: #f9b234;
 position: absolute;
 top: 4500px;
 
-
+overflow: hidden;
 width: 100%;
 font-size: 20px;
 
