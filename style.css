@@ -16,6 +16,20 @@
     background-color: transparent;
   }
 }
+#video-box{
+  height: 600px;
+  width: 100%;
+}
+
+video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
 
 ::-webkit-scrollbar-track
 {
@@ -1978,12 +1992,14 @@
     overflow: hidden;
   }
 
+
   header h4 {
     position: absolute;
     left: 5%;
     bottom: 1rem;
     font-size: 1.6rem;
   }
+  
 
   /* splash screen */
   .intro {
@@ -2085,9 +2101,9 @@
   .vertical-center {
     position: absolute;
     top: 50%;
-    left: 40px;
     transform: translate(0, -50%);
     padding: 10px;
+    width: 100%;
   }
 
   .vertical-center h2 {
@@ -2683,18 +2699,47 @@
     z-index: 3;
   }
 
-  .eve-wrapper {
+  .eve-wrapper1 {
     position: absolute;
     margin: auto;
     top: 2000px;
-    padding-left: 20rem;
+    width: 100%;
   }
-  .event-wrapper h1{
+  .eve-wrapper1 h1{
+    color: white;
+    writing-mode: vertical-lr;
+    position: absolute;
+    left: 18%;
+    bottom: 0;
+    font-size: 50px;
+  }
+  .eve-wrapper2 {
+    position: absolute;
+    margin: auto;
+    top: 2800px;
+    right:120px;
+  }
+  .eve-wrapper2 h1{
+    color: white;
+    writing-mode: vertical-lr;
+    position: absolute;
+    left: -80px;
+    bottom: 0;
+    font-size: 50px;
+  }
+  .eve-wrapper3 {
+    position: absolute;
+    margin: auto;
+    top: 3600px;
+    left:120px;
+  }
+  .eve-wrapper3 h1{
     color: white;
     writing-mode: vertical-lr;
     position: absolute;
     right: -80px;
-    top: 25%;
+    bottom: 0;
+    font-size: 50px;
   }
 .eve-container {
   width: 100%;
@@ -2707,9 +2752,9 @@
 }
 .eve-container .eve-card {
   position: relative;
-  width: 600px;
-  height: 400px;
-  background-color: #fff;
+  width: 800px;
+  height: 500px;
+  background-color: beige;
   overflow: hidden;
   margin-bottom: 4px;
 }
@@ -2769,7 +2814,7 @@
 .eve-container .eve-card p {
   z-index: 99;
   position: absolute;
-  top: 320px;
+  top: 400px;
   left: 40px;
   color: #333;
   opacity: 0.7;
@@ -2787,23 +2832,23 @@
 }
 .eve-container .eve-card .eve-pic {
   z-index: 100;
-  width: 600px;
-  height: 300px;
+  width: 800px;
+  height: 500px;
   background-image: url("./assets/images/Crescentia4.jpg");
   background-size: 100% 100%;
 }
 .eve-container .eve-card .eve-pic1 {
   z-index: 100;
-  width: 600px;
-  height: 300px;
+  width: 800px;
+  height: 500px;
   background-image: url("./assets/images/Crescentia3.jpg");
   background-size: 100% 100%;
 
 }
 .eve-container .eve-card .eve-pic2 {
   z-index: 100;
-  width: 600px;
-  height: 300px;
+  width: 800px;
+  height: 500px;
   background-image: url("./assets/images/Crescentia1.jpg");
   background-size: 100% 100%;
 
@@ -2817,26 +2862,33 @@
   position: absolute;
   right: 14px;
   bottom: 14px;
-  width: 50px;
-  height:6.5px;
-  background-color: #DA4D1D;
+  width: 150px;
+  height: 25px;
+  background-color: #f1a74e;
   border: none;
   border-radius: 30px;
   cursor: pointer;
   outline: none;
   transition: all 0.3s ease;
-  mix-blend-mode: hard-light;
+
 }
 .eve-container .eve-card button i {
   font-size: 3rem;
 }
 .eve-container .eve-card:hover button {
-  transform: scale(25);
+  transform: scale(10);
 }
 .eve-container .eve-card:hover p {
   color: #fff;
 }
+.eve-card button {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
 
+.eve-card:hover button {
+  color: transparent;
+}
 .eve-container .eve-card2 .eve-pic {
   background-image: url("https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=rb-0.3.5&s=3a2fc3039516555bbb2e9cd2967bd321&auto=format&fit=crop&w=1537&q=80");
 }
@@ -2853,7 +2905,7 @@
   /* Segments */
   .segments-container {
     position: absolute;
-    top: 3650px;
+    top: 4250px;
     left: 20px;
     height: 300px;
     width: 100%;
@@ -2891,7 +2943,7 @@
 
   .wrapper {
     position: absolute;
-    top: 4000px;
+    top: 4600px;
     align-items: center;
     display: flex;
     height: 100vh;
@@ -3001,7 +3053,7 @@
   /* contact us */
   .contact-container {
     position: absolute;
-    top: 4800px;
+    top: 5400px;
     left: 50px;
     font-size: 50px;
   }
@@ -3025,7 +3077,7 @@
 
   .contacts-container {
     position: absolute;
-    top: 4950px;
+    top: 5550px;
     left: 90px;
     padding: 10px 0px;
     margin-top: 50px;

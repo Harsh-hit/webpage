@@ -1,7 +1,20 @@
 "use strict";
+$(document).ready(function(){
+  $('.eve-carousel').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: true,
+    prevArrow: $('.left-btn'),
+    nextArrow: $('.right-btn'),
+  });
+});
 let intro= document.querySelector(".intro")
 let logo = document.querySelector(".logo-header")
 let logoSpan = document.querySelectorAll(".logo")
+
+
 
 window.addEventListener('DOMContentLoaded',()=>{
 
@@ -255,17 +268,6 @@ bookPrevSlide.addEventListener("click", function () {
   });
 });
 
-$(document).ready(function(){
-  $('.eve-carousel').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000, // Adjust autoplay speed as needed
-    arrows: true,
-    prevArrow: $('.left-btn'),
-    nextArrow: $('.right-btn')
-  });
-});
 
 
 
