@@ -255,5 +255,17 @@ bookPrevSlide.addEventListener("click", function () {
   });
 });
 
+$(document).ready(function(){
+  $('.eve-carousel').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000, // Adjust autoplay speed as needed
+    arrows: true,
+    prevArrow: $('.left-btn'),
+    nextArrow: $('.right-btn')
+  });
+});
+
 
 

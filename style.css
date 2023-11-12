@@ -1770,7 +1770,7 @@
     display: flex;
     flex-wrap: nowrap;
     position: relative;
-    top: 65px;
+    top: 55px;
   }
 
   .card>.row>.icon {
@@ -2683,7 +2683,173 @@
     z-index: 3;
   }
 
+  .eve-wrapper {
+    position: absolute;
+    margin: auto;
+    top: 2000px;
+    padding-left: 20rem;
+  }
+  .event-wrapper h1{
+    color: white;
+    writing-mode: vertical-lr;
+    position: absolute;
+    right: -80px;
+    top: 25%;
+  }
+.eve-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.eve-container .eve-card {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+.eve-container .eve-card:before {
+  content: "";
+  z-index: 99;
+  position: absolute;
+  top: -10px;
+  left: 32px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: black;
+}
+.eve-container .eve-card:after {
+  content: "";
+  z-index: 99;
+  position: absolute;
+  bottom: -10px;
+  left: 32px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: black
+}
+.eve-container .eve-card h2 {
+  z-index: 99;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  height: 100%;
+  left: 530px;
+  font-size: 55.5px;
+  font-weight: 700;
+  color: #f9a744;
+  opacity: 1; /* Set initial opacity */
+  transition: opacity 0.2s ease;
+  background-color: white;
+  writing-mode: vertical-lr;
+  overflow-x: visible; /* Add transition property */
+}
 
+/* .eve-container .eve-card:hover h2 {
+  opacity: 0; /* Set opacity on hover */
+} */
+
+.eve-container .eve-card .fa-arrow-right {
+  z-index: 100;
+  position: absolute;
+  right: 75px;
+  bottom: 25px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.eve-container .eve-card p {
+  z-index: 99;
+  position: absolute;
+  top: 320px;
+  left: 40px;
+  color: #333;
+  opacity: 0.7;
+  font-size: 12px;
+  letter-spacing: 1px;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  opacity: 0;
+  background: transparent;
+  mix-blend-mode: hard-light; /* Set initial opacity */
+}
+
+.eve-container .eve-card:hover p {
+  opacity: 1; /* Set opacity on hover */
+}
+.eve-container .eve-card .eve-pic {
+  z-index: 100;
+  width: 600px;
+  height: 300px;
+  background-image: url("./assets/images/Crescentia4.jpg");
+  background-size: 100% 100%;
+}
+.eve-container .eve-card .eve-pic1 {
+  z-index: 100;
+  width: 600px;
+  height: 300px;
+  background-image: url("./assets/images/Crescentia3.jpg");
+  background-size: 100% 100%;
+
+}
+.eve-container .eve-card .eve-pic2 {
+  z-index: 100;
+  width: 600px;
+  height: 300px;
+  background-image: url("./assets/images/Crescentia1.jpg");
+  background-size: 100% 100%;
+
+}
+.eve-container .eve-card:hover i {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.eve-container .eve-card button {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  width: 50px;
+  height:6.5px;
+  background-color: #DA4D1D;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  mix-blend-mode: hard-light;
+}
+.eve-container .eve-card button i {
+  font-size: 3rem;
+}
+.eve-container .eve-card:hover button {
+  transform: scale(25);
+}
+.eve-container .eve-card:hover p {
+  color: #fff;
+}
+
+.eve-container .eve-card2 .eve-pic {
+  background-image: url("https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=rb-0.3.5&s=3a2fc3039516555bbb2e9cd2967bd321&auto=format&fit=crop&w=1537&q=80");
+}
+.eve-container .eve-card2 button {
+  background-color: #2b26c3;
+}
+
+.dr {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 100px;
+}
   /* Segments */
   .segments-container {
     position: absolute;
@@ -2758,7 +2924,7 @@
     display: flex;
     flex-wrap: nowrap;
     position: relative;
-    top: 10px;
+    bottom: -10px;
     width: 100%;
   }
 
@@ -2770,7 +2936,6 @@
     color: white;
     display: flex;
     justify-content: center;
-    margin: 15px;
     width: 50px;
   }
 
@@ -2791,7 +2956,6 @@
     position: relative;
     left: 20px;
     color: #b0b0ba;
-    padding-top: 5px;
   }
 
   .description h4 {
@@ -2946,7 +3110,7 @@
       left: -10%;
     }
   }
-}
+
 
 .gallery2 {
   position: relative;
