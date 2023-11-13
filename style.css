@@ -17,7 +17,7 @@
   }
 }
 #video-box{
-  height: 600px;
+  height: 50vh;
   width: 100%;
 }
 
@@ -28,6 +28,8 @@ video{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0.4;
+  
   
 }
 
@@ -2709,37 +2711,45 @@ video{
     color: white;
     writing-mode: vertical-lr;
     position: absolute;
-    left: 18%;
+    left: 2rem;
     bottom: 0;
-    font-size: 50px;
+    font-size: 80px; 
+    z-index: 2;
+    background-color: transparent;
+    
+  
   }
   .eve-wrapper2 {
     position: absolute;
     margin: auto;
     top: 2800px;
-    right:120px;
+    width: 100%;
   }
   .eve-wrapper2 h1{
     color: white;
     writing-mode: vertical-lr;
     position: absolute;
-    left: -80px;
+    right: 2rem;
     bottom: 0;
-    font-size: 50px;
+    font-size: 80px; 
+    z-index: 2;
+    background-color: transparent;
   }
   .eve-wrapper3 {
     position: absolute;
     margin: auto;
     top: 3600px;
-    left:120px;
+    width: 100%;
   }
   .eve-wrapper3 h1{
     color: white;
     writing-mode: vertical-lr;
     position: absolute;
-    right: -80px;
+    left: 2rem;
     bottom: 0;
-    font-size: 50px;
+    font-size: 80px; 
+    z-index: 2;
+    background-color: transparent;
   }
 .eve-container {
   width: 100%;
@@ -2976,15 +2986,16 @@ video{
     display: flex;
     flex-wrap: nowrap;
     position: relative;
-    bottom: -10px;
+    bottom: 80px;
     width: 100%;
   }
 
   .card>.row>.icon {
     position: absolute;
+    top: 20px;
     align-items: center;
     background: #223;
-    border-radius: 50%;
+    border-radius: 100%;
     color: white;
     display: flex;
     justify-content: center;
