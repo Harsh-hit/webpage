@@ -2710,9 +2710,8 @@ video{
   .eve-wrapper1 h1{
     color: white;
     writing-mode: vertical-lr;
-    position: absolute;
-    left: 2rem;
-    bottom: 0;
+    position: relative;
+    right: 450px;
     font-size: 80px; 
     z-index: 2;
     background-color: transparent;
@@ -2728,9 +2727,8 @@ video{
   .eve-wrapper2 h1{
     color: white;
     writing-mode: vertical-lr;
-    position: absolute;
-    right: 2rem;
-    bottom: 0;
+    position: relative;
+    left: 450px;
     font-size: 80px; 
     z-index: 2;
     background-color: transparent;
@@ -2744,9 +2742,8 @@ video{
   .eve-wrapper3 h1{
     color: white;
     writing-mode: vertical-lr;
-    position: absolute;
-    left: 2rem;
-    bottom: 0;
+    position: relative;
+    right: 450px;
     font-size: 80px; 
     z-index: 2;
     background-color: transparent;
@@ -2761,7 +2758,7 @@ video{
   position: relative;
 }
 .eve-container .eve-card {
-  position: relative;
+  position: absolute;
   width: 800px;
   height: 500px;
   background-color: beige;
