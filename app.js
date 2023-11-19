@@ -1,4 +1,50 @@
 "use strict";
+$(document).ready(function () {
+  var $slider = $("#slider");
+  var slideLength = $("#slider > .slide").length - 1;
+  var is3D = false;
+
+  $(".slide").click(function () {
+      if (is3D) {
+          nextSlide();
+      } else {
+          prevSlide();
+      }
+  });
+
+  $(".key.ctrl").mousedown(function () {
+      is3D = true;
+      $(this).addClass("active");
+  }).mouseup(function () {
+      is3D = false;
+      $(this).removeClass("active");
+  });
+
+  function nextSlide() {
+      $slider.addClass("transfomer");
+      setTimeout(function () {
+          var $slicedSlide = $('.slide').slice(0, 1);
+          $slider.append($slicedSlide);
+          $slider.removeClass("transfomer");
+      }, 500); // Increased the timeout for smoother animation
+  }
+
+  function prevSlide() {
+      lastElem().addClass("active");
+      $slider.addClass("transfomer");
+      setTimeout(function () {
+          var $slicedSlide = $('.slide').slice(slideLength);
+          $slider.prepend($slicedSlide);
+          $(document).find(".slide.active").removeClass("active");
+          $slider.removeClass("transfomer");
+      }, 50);
+  }
+
+  function lastElem() {
+      return $("#slider > .slide").last();
+  }
+});
+
 $(document).ready(function(){
   $('.eve-carousel').slick({
     slidesToShow: 1,
