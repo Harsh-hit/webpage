@@ -17,22 +17,6 @@
   }
 }
 
-#video-box {
-  height: 100vh;
-  width: 100%;
-}
-
-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.4;
-
-
-}
 
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -54,16 +38,12 @@ video {
 @media (max-width: 768px) {
 
   /* Adjust styles for smaller screens here */
-  body {
-    overflow-x: hidden;
-  }
-
-  header {
+  /* header {
     position: relative;
     left: 0;
     top: 0;
     width: 100%;
-    height: 80px;
+    height: 100%;
   }
 
   header h4 {
@@ -71,29 +51,41 @@ video {
     left: 5%;
     bottom: 1rem;
     font-size: 1.6rem;
-  }
+  } */
 
   /* splash screen */
   .intro {
     position: absolute;
-    z-index: 10;
-    left: 0;
-    top: 0;
+    z-index: 200;
+    left: 0px;
+    top: 0px;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: rgb(21, 21, 21);
     transition: 2s;
-
   }
 
   .intro span {
     font-size: 18px;
   }
 
+  .intro-image {
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    top: 235px;
+    left: 250px;
+  }
+
+  .intro-image img {
+    width: 90%;
+    height: 80px;
+  }
+
   .logo-header {
     position: absolute;
-    top: 40%;
-    left: 50%;
+    top: 270px;
+    left: 65%;
     transform: translate(-50%, -50%);
   }
 
@@ -138,8 +130,8 @@ video {
     position: fixed;
     left: 0px;
     width: 100%;
+    height: 60px;
     z-index: 20;
-
   }
 
   .navbar-logo {
@@ -160,11 +152,9 @@ video {
     background-color: rgb(21, 21, 21);
     cursor: pointer;
     white-space: nowrap;
+    top: 10px;
     right: 0px;
-    z-index: top;
   }
-
-
 
   .dd-button:hover {
     background-color: rgb(21, 21, 21);
@@ -174,18 +164,37 @@ video {
     display: none;
   }
 
+  #video-box {
+    position: absolute;
+    top: 100px;
+    height: 100%;
+    width: 900px;
+  }
+
+  #video-box video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+  }
+  
+
   .nav-menu {
+    width: 59%;
     color: #cccccc;
     position: absolute;
     top: 100%;
+    left: 0px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    padding: 0;
     margin: 2px 0 0 0;
     box-shadow: 0 0 6px 0 #cccccc;
     background-color: #ffffff;
     list-style-type: none;
-    z-index: 3;
+    z-index: 107;
   }
 
   .dd-input+.nav-menu {
@@ -301,52 +310,6 @@ video {
     overflow: hidden;
   }
 
-  /* 
-  #carousel {
-    margin: auto;
-    width: 70%;
-    position: relative;
-    top: 20px;
-    transform-style: preserve-3d;
-  }
-
-  .card1 {
-    position: absolute;
-    left: 30%;
-    width: 100%;
-    height: 100px;
-    transform-style: preserve-3d;
-    transition: 1s;
-  }
-
-  .card1 img {
-    width: 100%;
-    height: 1px;
-  }
-
-  .card1:nth-child(1) {
-    transform: translateX(0) translateZ(0);
-
-  }
-
-  .card1:nth-child(2) {
-    transform: translateX(-55%) translateZ(-50px) scale(0.8);
-
-  }
-
-  .card1:nth-child(3) {
-    transform: translateX(-110%) translateZ(-100px) scale(0.6);
-
-  }
-
-  .card1:nth-child(4) {
-    transform: translateX(110%) translateZ(-100px) scale(0.6);
-
-  }
-
-  .card1:nth-child(5) {
-    transform: translateX(55%) translateZ(-50px) scale(0.8);
-  } */
 
   /* EVENTS */
   .our-events-container {
@@ -476,356 +439,512 @@ video {
     
   } */
   /* New Events Section */
-  /* CRESCENTIA */
-  .first_half {
-    color: #f1b24a;
-  }
-
-  .image {
-    display: block;
-    width: 100%;
-    /* Width = 100% / number of images */
-    height: 400px;
-    object-fit: cover;
-  }
-
-  /* For crescentia */
-  .crescentia_container {
+  .flex-container {
+    display: flex;
     position: absolute;
-    top: 1900px;
-    /* left: 40px; */
+    top: 2100px;
     width: 100%;
-    height: 350px;
-  }
-
-  /* Overlay, when you hover */
-  .crescentia_overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.70);
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: width 0.34s ease;
-  }
-
-  .crescentia_container:hover .crescentia_overlay {
-    width: 100%;
-  }
-
-  .crescentia_heading {
-    width: 100%;
-    margin-top: -10%;
-    top: -100px;
-    color: white;
-    font-size: 55px;
-    position: absolute;
-    text-align: center;
-  }
-
-  .crescentia_description {
-    text-align: center;
-    background: transparent;
-    color: white;
-    font-size: 13px;
-    margin: 20% 10% 10% 0;
-    width: 100%;
-    letter-spacing: 2px;
-    line-height: 1.35em;
-  }
-
-  .slider {
-    width: 100%;
-    max-width: 650px;
-    height: 350px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
-  }
-
-  .slide {
-    width: 100%;
-    max-width: 650px;
-    height: 400px;
-    position: absolute;
-    left: 0;
-    transition: all 0.5s;
-  }
-
-  .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  /* buttons css */
-  .btn {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    border: none;
-    border-radius: 50%;
-    z-index: 10px;
-    cursor: pointer;
-    background-color: #fff;
-    font-size: 18px;
-  }
-
-  .btn:active {
-    transform: scale(1.1);
-  }
-
-  .btn-prev {
-    top: 45%;
-    left: 2%;
-  }
-
-  .btn-next {
-    top: 45%;
-    right: 2%;
-  }
-
-  .crescentia_container:hover .btn-prev {
-    z-index: 3;
-  }
-
-  .crescentia_container:hover .btn-next {
-    z-index: 3;
-  }
-
-  /* LITERATI */
-  .literati_container {
-    position: absolute;
-    top: 2600px;
-    /* right: 140px; */
-    /* Change 'left' to 'right' */
-    width: 100%;
-    height: 400px;
-  }
-
-  .literati_overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.70);
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: width 0.34s ease;
-  }
-
-  .literati_container:hover .literati_overlay {
-    width: 100%;
-  }
-
-  .image {
-    display: block;
-    width: 100%;
-    /* Width = 100% / number of images */
-    height: 350px;
-    object-fit: cover;
-  }
-
-  .literati_heading {
-    width: 50%;
-    top: -90px;
-    margin-top: -15%;
-    color: white;
-    font-size: 60px;
-    position: absolute;
-    text-align: left;
-    left: 90px;
-    font-weight: 900;
-    /* Add this rule to position 'h1' on the left */
-  }
-
-  .first_half {
-    color: #F1B24A;
-  }
-
-  .literati_description {
-    text-align: center;
-    background: transparent;
-    color: white;
-    font-size: 15px;
-    margin: 20% 10% 10% 0;
-    width: 100%;
-    letter-spacing: 2px;
-    line-height: 1.35em;
-  }
-
-  .literati_slider {
-    width: 100%;
-    max-width: 650px;
-    height: 350px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
-  }
-
-  .literati_slide {
-    width: 100%;
-    max-width: 650px;
-    height: 400px;
-    position: absolute;
-    transition: all 0.5s;
-  }
-
-  .literati_slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .btn1 {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    border: none;
-    border-radius: 50%;
-    z-index: 10px;
-    cursor: pointer;
-    background-color: #fff;
-    font-size: 18px;
-  }
-
-  .btn1:active {
-    transform: scale(1.1);
-  }
-
-  .btn1-prev {
-    top: 45%;
-    left: 2%;
-  }
-
-  .btn1-next {
-    top: 45%;
-    right: 2%;
-  }
-
-  .literati_container:hover .btn1-prev {
-    z-index: 3;
-  }
-
-  .literati_container:hover .btn1-next {
-    z-index: 3;
+    height: 1000px;
   }
 
   .book_container {
     position: absolute;
-    top: 3200px;
-    /* left: 75px; */
-    width: 100%;
-    height: 350px;
-  }
-
-  .book_overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.70);
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: width 0.34s ease;
-  }
-
-  .book_container:hover .book_overlay {
-    width: 100%;
-  }
-
-  .image {
-    display: block;
-    width: 100%;
-    /* Width = 100% / number of images */
-    height: 350px;
-    object-fit: cover;
-  }
-
-  .book_heading {
-    width: 100%;
-    margin-top: -18%;
-    top: -90px;
-    /* margin-left: 110%; */
-    color: white;
-    font-size: 60px;
-    position: absolute;
-    text-align: center;
   }
 
   .book_description {
-    text-align: center;
-    background: transparent;
+    width: 50%;
     color: white;
-    font-size: 13px;
-    margin: 20% 10% 10% 0;
-    width: 100%;
-    letter-spacing: 2px;
-    line-height: 1.35em;
+    flex: 2;
+    position: absolute;
+    left: 51%;
+    top: 65px;
+    background-color: transparent;
+    padding-right: 50px;
   }
 
-  .book_slider {
+  #book_slider-wrapp {
+    width: 50%;
+    height: fit-content;
+    position: absolute;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    flex: 1;
+  }
+
+  .book_description h2 {
+    color: #FFFFFF;
+    font-size: 80px;
+    position: absolute;
+    left: 30px;
+    width: 80%;
+    /* background-color: transparent; */
+  }
+
+  .event_brick {
+    width: 30px;
+    height: 90px;
+    background-color: orange;
+    position: absolute;
+    left: -20px;
+    top: 13px;
+  }
+
+
+  .book_description p {
+    width: 90%;
+    position: absolute;
+    top: 130px;
+    left: -20px;
+    text-align: justify;
+    background-color: transparent;
+  }
+
+  #book_slider-wrapp #book_slider {
     width: 100%;
-    max-width: 650px;
-    height: 350px;
+    height: auto;
     position: relative;
-    overflow: hidden;
-    border-radius: 15px;
   }
 
-  .book_slide {
-    width: 100%;
-    max-width: 650px;
-    height: 400px;
+  #book_slider-wrapp #book_slider .slide {
+    color: #FFFFFF;
     position: absolute;
-    left: 0;
-    transition: all 0.5s;
+    width: 700px;
+    height: 450px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add slight shadow */
+    border: 2px solid #FFFFFF;
+    /* Add white border */
   }
 
-  .book_slide img {
+  #book_slider-wrapp #book_slider .slide img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    border-radius: 2px;
+    /* Optional: Add border-radius to the image */
+    border: 1px solid #FFFFFF;
+    /* Optional: Add border to the image */
   }
 
-  .btn2 {
+  #book_slider-wrapp #book_slider .slide:nth-child(1) {
+    top: 80px;
+    opacity: 1;
+    transform: scale(0.5);
+    /* Decrease size by 50% */
+  }
+
+  #book_slider-wrapp #book_slider .slide:nth-child(2) {
+    top: 40px;
+    opacity: 1;
+    transform: scale(0.6);
+    /* Decrease size by 40% */
+  }
+
+  #book_slider-wrapp #book_slider .slide:nth-child(3) {
+    top: 0px;
+    opacity: 1;
+    transform: scale(0.7);
+    /* Decrease size by 30% */
+  }
+
+  #book_slider-wrapp #book_slider .slide:nth-child(4) {
+    top: 100px;
+    opacity: 1;
+    transform: scale(0.8);
+    /* Decrease size by 20% */
+  }
+
+  #book_slider-wrapp #book_slider .slide:nth-child(5) {
+    top: 50px;
+    opacity: 1;
+    transform: scale(0.9);
+    /* Decrease size by 10% */
+  }
+
+  #book_slider-wrapp #book_slider .slide.active {
+    top: 0;
+    opacity: 1;
+  }
+
+  #book_slider-wrapp #book_slider.transfomer .slide {
+    /* Adjust transformations as needed for the 2D effect */
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  #book_slider-wrapp #book_slider.transfomer .slide:nth-child(2) {
+    top: 160px;
+    opacity: 1;
+    transform: scale(0.6);
+    /* Decrease size by 40% */
+  }
+
+  #book_slider-wrapp #book_slider.transfomer .slide:nth-child(3) {
+    top: 100px;
+    opacity: 1;
+    transform: scale(0.7);
+    /* Decrease size by 30% */
+  }
+
+  #book_slider-wrapp #book_slider.transfomer .slide:nth-child(4) {
+    top: 40px;
+    opacity: 1;
+    transform: scale(0.8);
+    /* Decrease size by 20% */
+  }
+
+  #book_slider-wrapp #book_slider.transfomer .slide:nth-child(5) {
+    top: 20px;
+    opacity: 1;
+    transform: scale(0.9);
+    /* Decrease size by 10% */
+  }
+
+
+
+  /* CRESCENTIA STYLES */
+  .crescentia_container {
     position: absolute;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    border: none;
-    border-radius: 50%;
-    z-index: 10px;
-    cursor: pointer;
-    background-color: #fff;
-    font-size: 18px;
+    top: 500px;
+    width: 100%;
+    height: 500px;
   }
 
-  .btn2:active {
-    transform: scale(1.1);
+  .crescentia_description {
+    width: 50%;
+    color: white;
+    flex: 2;
+    position: absolute;
+    left: 51%;
+    top: 65px;
+    background-color: transparent;
+    padding-right: 50px;
   }
 
-  .btn2-prev {
-    top: 45%;
-    left: 2%;
+  #crescentia_slider-wrapp {
+    width: 50%;
+    height: fit-content;
+    position: absolute;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    flex: 1;
   }
 
-  .btn2-next {
-    top: 45%;
-    right: 2%;
+  .crescentia_description h2 {
+    color: #FFFFFF;
+    font-size: 80px;
+    position: absolute;
+    left: 30px;
+    background-color: transparent;
   }
 
-  .book_container:hover .btn2-prev {
-    z-index: 3;
+  /* .crescentia_description span {
+    background-color: #e2761d;
+    color: black;
+  } */
+
+  .event1_brick {
+    width: 30px;
+    height: 90px;
+    background-color: orange;
+    position: absolute;
+    left: -10px;
+    top: 13px;
   }
 
-  .book_container:hover .btn2-next {
-    z-index: 3;
+  .crescentia_description p {
+    width: 90%;
+    text-align: justify;
+    position: absolute;
+    top: 130px;
+    left: -10px;
+    background-color: transparent;
   }
 
+  #crescentia_slider-wrapp #slider1 {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  #crescentia_slider-wrapp #slider1 .slide1 {
+    color: #FFFFFF;
+    position: absolute;
+    width: 700px;
+    height: 450px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add slight shadow */
+    border: 2px solid #FFFFFF;
+    /* Add white border */
+  }
+
+  #crescentia_slider-wrapp #slider1 .slide1 img {
+    width: 100%;
+    border-radius: 2px;
+    /* Optional: Add border-radius to the image */
+    border: 1px solid #FFFFFF;
+    /* Optional: Add border to the image */
+  }
+
+  #crescentia_slider-wrapp #slider1 .slide1:nth-child(1) {
+    top: 80px;
+    opacity: 1;
+    transform: scale(0.5);
+    /* Decrease size by 50% */
+  }
+
+  #crescentia_slider-wrapp #slider1 .slide1:nth-child(2) {
+    top: 40px;
+    opacity: 1;
+    transform: scale(0.6);
+    /* Decrease size by 40% */
+  }
+
+  #crescentia_slider-wrapp #slider1 .slide1:nth-child(3) {
+    top: 0px;
+    opacity: 1;
+    transform: scale(0.7);
+    /* Decrease size by 30% */
+  }
+
+  #crescentia_slider-wrapp #slider1 .slide1:nth-child(4) {
+    top: 100px;
+    opacity: 1;
+    transform: scale(0.8);
+    /* Decrease size by 20% */
+  }
+
+  #crescentia_slider-wrapp #slider1 .slide1:nth-child(5) {
+    top: 50px;
+    opacity: 1;
+    transform: scale(0.9);
+    /* Decrease size by 10% */
+  }
+
+  #crescentia_slider-wrapp #slider1 .slide1.active {
+    top: 0;
+    opacity: 1;
+  }
+
+  #crescentia_slider-wrapp #slider1.transfomer .slide1 {
+    /* Adjust transformations as needed for the 2D effect */
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  #crescentia_slider-wrapp #slider1.transfomer .slide1:nth-child(2) {
+    top: 160px;
+    opacity: 1;
+    transform: scale(0.6);
+    /* Decrease size by 40% */
+  }
+
+  #crescentia_slider-wrapp #slider1.transfomer .slide1:nth-child(3) {
+    top: 100px;
+    opacity: 1;
+    transform: scale(0.7);
+    /* Decrease size by 30% */
+  }
+
+  #crescentia_slider-wrapp #slider1.transfomer .slide1:nth-child(4) {
+    top: 40px;
+    opacity: 1;
+    transform: scale(0.8);
+    /* Decrease size by 20% */
+  }
+
+  #crescentia_slider-wrapp #slider1.transfomer .slide1:nth-child(5) {
+    top: 20px;
+    opacity: 1;
+    transform: scale(0.9);
+    /* Decrease size by 10% */
+  }
+
+
+  /* LITERATI STYLES */
+  .literati_container {
+    position: absolute;
+    top: 1000px;
+    width: 100%;
+    height: 500px;
+  }
+
+  .literati_description {
+    width: 50%;
+    color: white;
+    flex: 2;
+    position: absolute;
+    left: 51%;
+    top: 65px;
+    background-color: transparent;
+    padding-right: 50px;
+  }
+
+  #literati_slider-wrapp {
+    width: 50%;
+    height: fit-content;
+    position: absolute;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    flex: 1;
+  }
+
+  .literati_description h2 {
+    color: #FFFFFF;
+    font-size: 80px;
+    position: absolute;
+    left: 40px;
+    background-color: transparent;
+  }
+
+  .literati_description p {
+    width: 100%;
+    position: absolute;
+    top: 130px;
+    text-align: justify;
+    background-color: transparent;
+  }
+
+  .event2_brick {
+    width: 30px;
+    height: 90px;
+    background-color: orange;
+    position: absolute;
+    left: -10px;
+    top: 13px;
+  }
+
+
+
+  #literati_slider-wrapp #slider2 {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  #literati_slider-wrapp #slider2 .slide2 {
+    color: #FFFFFF;
+    position: absolute;
+    width: 700px;
+    height: 450px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add slight shadow */
+    border: 2px solid #FFFFFF;
+    /* Add white border */
+  }
+
+  #literati_slider-wrapp #slider2 .slide2 img {
+    width: 100%;
+    border-radius: 2px;
+    /* Optional: Add border-radius to the image */
+    border: 1px solid #FFFFFF;
+    /* Optional: Add border to the image */
+  }
+
+  #literati_slider-wrapp #slider2 .slide2:nth-child(1) {
+    top: 80px;
+    opacity: 1;
+    transform: scale(0.5);
+    /* Decrease size by 50% */
+  }
+
+  #literati_slider-wrapp #slider2 .slide2:nth-child(2) {
+    top: 40px;
+    opacity: 1;
+    transform: scale(0.6);
+    /* Decrease size by 40% */
+  }
+
+  #literati_slider-wrapp #slider2 .slide2:nth-child(3) {
+    top: 0px;
+    opacity: 1;
+    transform: scale(0.7);
+    /* Decrease size by 30% */
+  }
+
+  #literati_slider-wrapp #slider2 .slide2:nth-child(4) {
+    top: 100px;
+    opacity: 1;
+    transform: scale(0.8);
+    /* Decrease size by 20% */
+  }
+
+  #literati_slider-wrapp #slider2 .slide2:nth-child(5) {
+    top: 50px;
+    opacity: 1;
+    transform: scale(0.9);
+    /* Decrease size by 10% */
+  }
+
+  #literati_slider-wrapp #slider2 .slide2.active {
+    top: 0;
+    opacity: 1;
+  }
+
+  #literati_slider-wrapp #slider2.transfomer .slide2 {
+    /* Adjust transformations as needed for the 2D effect */
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  #literati_slider-wrapp #slider2.transfomer .slide2:nth-child(2) {
+    top: 160px;
+    opacity: 1;
+    transform: scale(0.6);
+    /* Decrease size by 40% */
+  }
+
+  #literati_slider-wrapp #slider2.transfomer .slide2:nth-child(3) {
+    top: 100px;
+    opacity: 1;
+    transform: scale(0.7);
+    /* Decrease size by 30% */
+  }
+
+  #literati_slider-wrapp #slider2.transfomer .slide2:nth-child(4) {
+    top: 40px;
+    opacity: 1;
+    transform: scale(0.8);
+    /* Decrease size by 20% */
+  }
+
+  #literati_slider-wrapp #slider2.transfomer .slide2:nth-child(5) {
+    top: 20px;
+    opacity: 1;
+    transform: scale(0.9);
+    /* Decrease size by 10% */
+  }
 
 
   /* EVENT CARDS END */
@@ -984,8 +1103,6 @@ video {
     font-size: 20px;
 
   }
-
-
   .contact-element3 {
     width: 60%;
     float: center;
@@ -1036,8 +1153,6 @@ video {
     color: rgb(252, 248, 240);
     overflow: hidden;
     position: relative;
-
-
   }
 
   .social-btn i {
@@ -1206,7 +1321,6 @@ video {
     position: absolute;
     display: inline-block;
     border: 1px solid #cccccc;
-    ;
     border-radius: 4px;
     padding: 10px 30px 10px 20px;
     background-color: #ffffff;
@@ -1322,16 +1436,6 @@ video {
     width: 150px;
   }
 
-  /* .logo-bg{
-  position: absolute;
-  /* align-items:flex-end; */
-  /* right: 0px;
-  width: 100%;
-  
-  top: 300px;
-  z-index: -1;
-
-}    */
 
   .about-us {
     position: absolute;
@@ -1455,8 +1559,6 @@ video {
     color: rgb(252, 248, 240);
     top: 50%;
     font-size: 50px;
-
-
   }
 
   .our-events-element3 {
@@ -1567,157 +1669,7 @@ video {
     /* Add padding as needed */
   }
 
-  /* EVENT CARDS START */
 
-
-  .ag-format-container {
-    position: relative;
-    width: 1142px;
-    top: 2100px;
-    margin: 0 auto;
-  }
-
-  .ag-courses_box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-
-    padding: 50px 0;
-  }
-
-  .ag-courses_item {
-    -ms-flex-preferred-size: calc(33.33333% - 30px);
-    flex-basis: calc(33.33333% - 30px);
-
-    margin: 0 15px 30px;
-
-    overflow: hidden;
-
-    border-radius: 28px;
-  }
-
-  .ag-courses-item_link {
-    display: block;
-    padding: 30px 20px;
-    background-color: #121212;
-
-    overflow: hidden;
-
-    position: relative;
-  }
-
-  .ag-courses-item_link:hover,
-  .ag-courses-item_link:hover .ag-courses-item_date {
-    text-decoration: none;
-    color: #FFF;
-  }
-
-  .ag-courses-item_link:hover .ag-courses-item_bg {
-    -webkit-transform: scale(10);
-    -ms-transform: scale(10);
-    transform: scale(10);
-  }
-
-  .ag-courses-item_title {
-    min-height: 87px;
-    margin: 0 0 25px;
-
-    overflow: hidden;
-
-    font-weight: bold;
-    font-size: 30px;
-    color: #FFF;
-
-    z-index: 2;
-    position: relative;
-  }
-
-  .ag-courses-item_date-box {
-    font-size: 18px;
-    color: #FFF;
-
-    z-index: 2;
-    position: relative;
-  }
-
-  .ag-courses-item_date {
-    font-weight: bold;
-    color: #FFF;
-
-    -webkit-transition: color .5s ease;
-    -o-transition: color .5s ease;
-    transition: color .5s ease
-  }
-
-  .ag-courses-item_bg {
-    height: 128px;
-    width: 128px;
-    background-color: #f9b234;
-
-    z-index: 2;
-    position: absolute;
-    top: -75px;
-    right: -75px;
-
-    border-radius: 50%;
-
-    -webkit-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
-  }
-
-  .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
-    background-color: #f9b234;
-  }
-
-  .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
-    background-color: #f9b234;
-  }
-
-  @media only screen and (max-width: 979px) {
-    .ag-courses_item {
-      -ms-flex-preferred-size: calc(50% - 30px);
-      flex-basis: calc(50% - 30px);
-    }
-
-    .ag-courses-item_title {
-      font-size: 24px;
-    }
-  }
-
-  @media only screen and (max-width: 767px) {
-    .ag-format-container {
-      width: 96%;
-    }
-
-  }
-
-  @media only screen and (max-width: 639px) {
-    .ag-courses_item {
-      -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-    }
-
-    .ag-courses-item_title {
-      min-height: 72px;
-      line-height: 1;
-
-      font-size: 24px;
-    }
-
-    .ag-courses-item_link {
-      padding: 22px 40px;
-    }
-
-    .ag-courses-item_date-box {
-      font-size: 16px;
-    }
-  }
 
   /* EVENT CARDS END */
   /* Segments */
@@ -1901,8 +1853,6 @@ video {
     background-color: rgb(21, 21, 21);
 
     /* border: red solid; */
-
-
   }
 
   .social-links {
@@ -1988,6 +1938,21 @@ video {
     overflow-x: hidden;
   }
 
+  #video-box {
+    height: 100vh;
+    width: 100%;
+  }
+  
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+  }
+  
   /* Adjust styles for larger screens here */
   header {
     position: relative;
@@ -2122,7 +2087,6 @@ video {
     position: absolute;
     top: 75%;
     left: 55px;
-    ;
     transform: translate(0, -50%);
     padding: 10px;
     width: 100%;
@@ -2182,11 +2146,11 @@ video {
   }
 
   .brick {
-    width: 30px;
+    width: 35px;
     height: 285px;
     background-color: orange;
     position: absolute;
-    left: 10px;
+    left: -6px;
   }
 
   .about-us-element h3 {
