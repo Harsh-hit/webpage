@@ -1,0 +1,706 @@
+  /* New Events Section */
+  /* CRESCENTIA */
+  .first_half {
+    color: #f1b24a;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    /* Width = 100% / number of images */
+    height: 400px;
+    object-fit: cover;
+  }
+
+  /* For crescentia */
+  .crescentia_container {
+    position: absolute;
+    top: 2000px;
+    left: 40px;
+    width: 50%;
+    height: 400px;
+  }
+
+  /* Overlay, when you hover */
+  .crescentia_overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.70);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: width 0.34s ease;
+  }
+
+  .crescentia_container:hover .crescentia_overlay {
+    width: 100%;
+  }
+
+  .crescentia_heading {
+    width: 100%;
+    margin-top: -38%;
+    margin-left: 120%;
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    text-align: left;
+  }
+
+  .crescentia_description {
+    text-align: justify;
+    background: transparent;
+    color: white;
+    font-size: 1.2vw;
+    margin: 12% 0 0 13%;
+    width: 70%;
+    letter-spacing: 3px;
+    line-height: 1.5em;
+  }
+
+  .slider {
+    width: 100%;
+    max-width: 650px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+
+  .slide {
+    width: 100%;
+    max-width: 650px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    transition: all 0.5s;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* buttons css */
+  .btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+  }
+
+  .btn:active {
+    transform: scale(1.1);
+  }
+
+  .btn-prev {
+    top: 45%;
+    left: 2%;
+  }
+
+  .btn-next {
+    top: 45%;
+    right: 2%;
+  }
+
+  .crescentia_container:hover .btn-prev {
+    z-index: 3;
+  }
+
+  .crescentia_container:hover .btn-next {
+    z-index: 3;
+  }
+
+  /* LITERATI */
+  .literati_container {
+    position: absolute;
+    top: 2600px;
+    right: 140px;
+    /* Change 'left' to 'right' */
+    width: 50%;
+    height: 400px;
+  }
+
+  .literati_overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.70);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: width 0.34s ease;
+  }
+
+  .literati_container:hover .literati_overlay {
+    width: 100%;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    /* Width = 100% / number of images */
+    height: 400px;
+    object-fit: cover;
+    /* Maintain aspect ratio */
+  }
+
+  .literati_heading {
+    width: 50%;
+    margin-top: -38%;
+    margin-left: -60%;
+    color: white;
+    font-size: 80px;
+    position: absolute;
+    text-align: left;
+    left: 40px;
+    font-weight: 900;
+    /* Add this rule to position 'h1' on the left */
+  }
+
+  .first_half {
+    color: #F1B24A;
+  }
+
+  .literati_description {
+    text-align: justify;
+    background: transparent;
+    color: white;
+    font-size: 1.2vw;
+    margin: 12% 0 0 13%;
+    width: 70%;
+    letter-spacing: 3px;
+    line-height: 1.5em;
+  }
+
+  .literati_slider {
+    width: 100%;
+    max-width: 650px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+
+  .literati_slide {
+    width: 100%;
+    max-width: 650px;
+    height: 400px;
+    position: absolute;
+    transition: all 0.5s;
+  }
+
+  .literati_slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .btn1 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+  }
+
+  .btn1:active {
+    transform: scale(1.1);
+  }
+
+  .btn1-prev {
+    top: 45%;
+    left: 2%;
+  }
+
+  .btn1-next {
+    top: 45%;
+    right: 2%;
+  }
+
+  .literati_container:hover .btn1-prev {
+    z-index: 3;
+  }
+
+  .literati_container:hover .btn1-next {
+    z-index: 3;
+  }
+
+  .book_container {
+    position: absolute;
+    top: 3200px;
+    left: 75px;
+    width: 50%;
+    height: 400px;
+  }
+
+  .book_overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.70);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: width 0.34s ease;
+  }
+
+  .book_container:hover .book_overlay {
+    width: 100%;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    /* Width = 100% / number of images */
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .book_heading {
+    width: 100%;
+    margin-top: -38%;
+    margin-left: 110%;
+    color: white;
+    font-size: 80px;
+    position: absolute;
+    text-align: left;
+  }
+
+  .book_description {
+    text-align: justify;
+    color: white;
+    background: transparent;
+    font-size: 1.2vw;
+    margin: 12% 0 0 13%;
+    width: 70%;
+    letter-spacing: 3px;
+    line-height: 1.5em;
+  }
+
+  .book_slider {
+    width: 100%;
+    max-width: 650px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+
+  .book_slide {
+    width: 100%;
+    max-width: 650px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    transition: all 0.5s;
+  }
+
+  .book_slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .btn2 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+  }
+
+  .btn2:active {
+    transform: scale(1.1);
+  }
+
+  .btn2-prev {
+    top: 45%;
+    left: 2%;
+  }
+
+  .btn2-next {
+    top: 45%;
+    right: 2%;
+  }
+
+  .book_container:hover .btn2-prev {
+    z-index: 3;
+  }
+
+  .book_container:hover .btn2-next {
+    z-index: 3;
+  }
+
+
+
+
+    /* EVENTS SECTION - INDIVIDUAL SECTIONS */
+    .eve-wrapper1 {
+        position: absolute;
+        margin: auto;
+        top: 2000px;
+        width: 100%;
+      }
+      .eve-wrapper1 h1{
+        color: white;
+        writing-mode: vertical-lr;
+        position: relative;
+        right: 450px;
+        font-size: 80px; 
+        z-index: 2;
+        background-color: transparent;
+      }
+      .eve-wrapper2 {
+        position: absolute;
+        margin: auto;
+        top: 2800px;
+        width: 100%;
+      }
+      .eve-wrapper2 h1{
+        color: white;
+        writing-mode: vertical-lr;
+        position: relative;
+        left: 450px;
+        font-size: 80px; 
+        z-index: 2;
+        background-color: transparent;
+      }
+      .eve-wrapper3 {
+        position: absolute;
+        margin: auto;
+        top: 3600px;
+        width: 100%;
+      }
+      .eve-wrapper3 h1{
+        color: white;
+        writing-mode: vertical-lr;
+        position: relative;
+        right: 450px;
+        font-size: 80px; 
+        z-index: 2;
+        background-color: transparent;
+      }
+    .eve-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+    }
+    .eve-container .eve-card {
+      position: absolute;
+      width: 800px;
+      height: 500px;
+      background-color: beige;
+      overflow: hidden;
+      margin-bottom: 4px;
+    }
+    .eve-container .eve-card:before {
+      content: "";
+      z-index: 99;
+      position: absolute;
+      top: -10px;
+      left: 32px;
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 16px;
+      background-color: black;
+    }
+    .eve-container .eve-card:after {
+      content: "";
+      z-index: 99;
+      position: absolute;
+      bottom: -10px;
+      left: 32px;
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 16px;
+      background-color: black
+    }
+    .eve-container .eve-card h2 {
+      z-index: 99;
+      font-family: "Poppins", sans-serif;
+      position: absolute;
+      height: 100%;
+      left: 530px;
+      font-size: 55.5px;
+      font-weight: 700;
+      color: #f9a744;
+      opacity: 1; /* Set initial opacity */
+      transition: opacity 0.2s ease;
+      background-color: white;
+      writing-mode: vertical-lr;
+      overflow-x: visible; /* Add transition property */
+    }
+    
+    /* .eve-container .eve-card:hover h2 {
+      opacity: 0; } /* Set opacity on hover */
+    
+    .eve-container .eve-card .fa-arrow-right {
+      z-index: 100;
+      position: absolute;
+      right: 75px;
+      bottom: 25px;
+      font-size: 40px;
+      cursor: pointer;
+    }
+    
+    .eve-container .eve-card p {
+      z-index: 99;
+      position: absolute;
+      top: 400px;
+      left: 40px;
+      color: #333;
+      opacity: 0.7;
+      font-size: 12px;
+      letter-spacing: 1px;
+      -webkit-transition: opacity 0.2s ease;
+      transition: opacity 0.2s ease;
+      opacity: 0;
+      background: transparent;
+      mix-blend-mode: hard-light; /* Set initial opacity */
+    }
+    
+    .eve-container .eve-card:hover p {
+      opacity: 1; /* Set opacity on hover */
+    }
+    .eve-container .eve-card .eve-pic {
+      z-index: 100;
+      width: 800px;
+      height: 500px;
+      background-image: url("./assets/images/Crescentia4.jpg");
+      background-size: 100% 100%;
+    }
+    .eve-container .eve-card .eve-pic1 {
+      z-index: 100;
+      width: 800px;
+      height: 500px;
+      background-image: url("./assets/images/Crescentia3.jpg");
+      background-size: 100% 100%;
+    
+    }
+    .eve-container .eve-card .eve-pic2 {
+      z-index: 100;
+      width: 800px;
+      height: 500px;
+      background-image: url("./assets/images/Crescentia1.jpg");
+      background-size: 100% 100%;
+    
+    }
+    .eve-container .eve-card:hover i {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    .eve-container .eve-card button {
+      position: absolute;
+      right: 14px;
+      bottom: 14px;
+      width: 150px;
+      height: 25px;
+      background-color: #f1a74e;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.3s ease;
+    
+    }
+    .eve-container .eve-card button i {
+      font-size: 3rem;
+    }
+    .eve-container .eve-card:hover button {
+      transform: scale(10);
+    }
+    .eve-container .eve-card:hover p {
+      color: #fff;
+    }
+    .eve-card button {
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+    
+    .eve-card:hover button {
+      color: transparent;
+    }
+    .eve-container .eve-card2 .eve-pic {
+      background-image: url("https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=rb-0.3.5&s=3a2fc3039516555bbb2e9cd2967bd321&auto=format&fit=crop&w=1537&q=80");
+    }
+    .eve-container .eve-card2 button {
+      background-color: #2b26c3;
+    }
+    
+    .dr {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      width: 100px;
+    }
+    
+    
+    .team-pics-center {
+        margin: auto;
+        position: absolute;
+        top: 5px;
+        left: 400px;
+        width: 65%;
+        height: 400px;
+      }
+    
+     
+      #carousel {
+        width: 75%;
+        position: relative;
+        transform-style: preserve-3d;
+      }
+    
+      .card1 {
+        position: absolute;
+        width: 380px;
+        height: 350px;
+        transform-style: preserve-3d;
+        transition: 1s;
+      }
+    
+      .card1 img {
+        height: 350px;
+        width: 100%;
+      }
+    
+      .card1:nth-child(1) {
+        transform: translateX(0) translateZ(0);
+        background: #add8e6;
+      }
+    
+      .card1:nth-child(2) {
+        transform: translateX(-55%) translateZ(-50px) scale(0.8) opacity(0.7);
+        background: #ff7f50;
+      }
+    
+      .card1:nth-child(3) {
+        transform: translateX(-110%) translateZ(-100px) scale(0.6) opacity(0.5);
+        background: #ffff00;
+      }
+    
+      .card1:nth-child(4) {
+        transform: translateX(110%) translateZ(-100px) scale(0.6) opacity(0.4);
+        background: #ff4500;
+        overflow: hidden;
+      }
+    
+      .card1:nth-child(5) {
+        transform: translateX(55%) translateZ(-50px) scale(0.8) opacity(0.4);
+        background: #7fff00;
+      } 
+
+
+      
+  /* 
+  .event-container {
+    position: absolute;
+    top: 1900px;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+  }
+
+  .event-container1 {
+    position: absolute;
+    top: 2400px;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+  }
+
+  .event-container2 {
+    position: absolute;
+    top: 2900px;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+  }
+
+  .slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+
+  .slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0%, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+  }
+
+  .slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+  }
+
+  .slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .slider-nav a {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition-property: opacity ease 250ms;
+  }
+
+  .slider-nav a:hover {
+    opacity: 1;
+  }
+
+  .row {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .text-section {
+    flex: 1; Let the text section take up available space 
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .carousel-section {
+    flex: 1;
+    padding: 2rem;
+  } */

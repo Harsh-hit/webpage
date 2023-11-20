@@ -1,7 +1,9 @@
 "use strict";
+
+// book mark javascript
 $(document).ready(function () {
-  var $slider = $("#slider");
-  var slideLength = $("#slider > .slide").length - 1;
+  var $slider = $("#book_slider");
+  var slideLength = $("#book_slider > .slide").length - 1;
   var is3D = false;
 
   $(".slide").click(function () {
@@ -41,10 +43,108 @@ $(document).ready(function () {
   }
 
   function lastElem() {
-      return $("#slider > .slide").last();
+      return $("#book_slider > .slide").last();
   }
 });
 
+
+// crescentia events javascript
+$(document).ready(function () {
+  var $slider = $("#slider1");
+  var slideLength = $("#slider1 > .slide1").length - 1;
+  var is3D = false;
+
+  $(".slide1").click(function () {
+      if (is3D) {
+          nextSlide();
+      } else {
+          prevSlide();
+      }
+  });
+
+  $(".key.ctrl").mousedown(function () {
+      is3D = true;
+      $(this).addClass("active");
+  }).mouseup(function () {
+      is3D = false;
+      $(this).removeClass("active");
+  });
+
+  function nextSlide() {
+      $slider.addClass("transfomer");
+      setTimeout(function () {
+          var $slicedSlide = $('.slide1').slice(0, 1);
+          $slider.append($slicedSlide);
+          $slider.removeClass("transfomer");
+      }, 500); // Increased the timeout for smoother animation
+  }
+
+  function prevSlide() {
+      lastElem().addClass("active");
+      $slider.addClass("transfomer");
+      setTimeout(function () {
+          var $slicedSlide = $('.slide1').slice(slideLength);
+          $slider.prepend($slicedSlide);
+          $(document).find(".slide1.active").removeClass("active");
+          $slider.removeClass("transfomer");
+      }, 50);
+  }
+
+  function lastElem() {
+      return $("#slider1 > .slide1").last();
+  }
+});
+
+// Literati Javascript
+$(document).ready(function () {
+  var $slider = $("#slider2");
+  var slideLength = $("#slider2 > .slide2").length - 1;
+  var is3D = false;
+
+  $(".slide2").click(function () {
+      if (is3D) {
+          nextSlide();
+      } else {
+          prevSlide();
+      }
+  });
+
+  $(".key.ctrl").mousedown(function () {
+      is3D = true;
+      $(this).addClass("active");
+  }).mouseup(function () {
+      is3D = false;
+      $(this).removeClass("active");
+  });
+
+  function nextSlide() {
+      $slider.addClass("transfomer");
+      setTimeout(function () {
+          var $slicedSlide = $('.slide2').slice(0, 1);
+          $slider.append($slicedSlide);
+          $slider.removeClass("transfomer");
+      }, 500); // Increased the timeout for smoother animation
+  }
+
+  function prevSlide() {
+      lastElem().addClass("active");
+      $slider.addClass("transfomer");
+      setTimeout(function () {
+          var $slicedSlide = $('.slide2').slice(slideLength);
+          $slider.prepend($slicedSlide);
+          $(document).find(".slide2.active").removeClass("active");
+          $slider.removeClass("transfomer");
+      }, 50);
+  }
+
+  function lastElem() {
+      return $("#slider2 > .slide2").last();
+  }
+});
+
+
+
+// intro - YES THIS IS THE INTRO JAVASCRIPT
 $(document).ready(function(){
   $('.eve-carousel').slick({
     slidesToShow: 1,
@@ -61,31 +161,30 @@ let logo = document.querySelector(".logo-header")
 let logoSpan = document.querySelectorAll(".logo")
 
 
-
 window.addEventListener('DOMContentLoaded',()=>{
-
     setTimeout(()=>{
         logoSpan.forEach((span,idx)=>{
             setTimeout(()=>{
                  span.classList.add('active');
-            },(idx+1)*200)
-
+            },(idx+1)*150)
         })
         setTimeout(()=>{
             logoSpan.forEach((span,idx)=>{
                 span.classList.remove("active");
                 span.classList.add("fade");
 
-            },(idx+1)*500)   
-        },2000); 
+            },(idx+1)*20)   
+        },1300); 
         setTimeout(()=>{
             intro.style.top = '-100vh';
-        },2000)
+        },1300)
 
     })
     
 })
 
+
+// NAVBAR JAVASCRIPT
 function scrollToSection(sectionId, offset) {
     const targetSection = document.querySelector(sectionId);
     if (targetSection) {
@@ -95,6 +194,7 @@ function scrollToSection(sectionId, offset) {
         });
     }
 }
+
 function scrollToImage(imageId) {
     const targetImage = document.getElementById(imageId);
     if (targetImage) {
@@ -106,6 +206,7 @@ function scrollToImage(imageId) {
         return false; // Prevent the default link behavior
     }
 }
+
 var cards = document.getElementsByClassName('card1'),
     transforms = [
   { x: 0,
@@ -163,157 +264,4 @@ function next() {
 document.getElementById('carousel').onclick = function() {
   next();  
 };
-
-// Select all slides
-const slides = document.querySelectorAll(".slide");
-
-// loop through slides and set each slides translateX
-slides.forEach((slide, indx) => {
-  slide.style.transform = `translateX(${indx * 100}%)`;
-});
-
-// select next slide button
-const nextSlide = document.querySelector(".btn-next");
-
-// current slide counter
-let curSlide = 0;
-// maximum number of slides
-let maxSlide = slides.length - 1;
-
-// add event listener and navigation functionality
-nextSlide.addEventListener("click", function () {
-  // check if current slide is the last and reset current slide
-  if (curSlide === maxSlide) {
-    curSlide = 0;
-  } else {
-    curSlide++;
-  }
-
-  //   move slide by -100%
-  slides.forEach((slide, indx) => {
-    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-  });
-});
-
-// select next slide button
-const prevSlide = document.querySelector(".btn-prev");
-
-// add event listener and navigation functionality
-prevSlide.addEventListener("click", function () {
-  // check if current slide is the first and reset current slide to last
-  if (curSlide === 0) {
-    curSlide = maxSlide;
-  } else {
-    curSlide--;
-  }
-
-  //   move slide by 100%
-  slides.forEach((slide, indx) => {
-    slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-  });
-});
-
-
-// Literati
-// Literati section
-const litSlides = document.querySelectorAll(".literati_slide");
-
-// Loop through slides and set each slide's translateX
-litSlides.forEach((slide, index) => {
-  slide.style.transform = `translateX(${index * 100}%)`;
-});
-
-// Select next slide button
-const litNextSlide = document.querySelector(".btn1-next");
-
-// Current slide counter
-let litCurSlide = 0;
-// Maximum number of slides
-let litMaxSlide = litSlides.length - 1;
-
-// Add event listener and navigation functionality
-litNextSlide.addEventListener("click", function () {
-  // Check if the current slide is the last and reset the current slide
-  if (litCurSlide === litMaxSlide) {
-    litCurSlide = 0;
-  } else {
-    litCurSlide++;
-  }
-
-  // Move the slide by -100%
-  litSlides.forEach((slide, index) => {
-    slide.style.transform = `translateX(${100 * (index - litCurSlide)}%)`;
-  });
-});
-
-// Select previous slide button
-const litPrevSlide = document.querySelector(".btn1-prev");
-
-// Add event listener and navigation functionality
-litPrevSlide.addEventListener("click", function () {
-  // Check if the current slide is the first and reset the current slide to last
-  if (litCurSlide === 0) {
-    litCurSlide = litMaxSlide;
-  } else {
-    litCurSlide--;
-  }
-
-  // Move the slide by 100%
-  litSlides.forEach((slide, index) => {
-    slide.style.transform = `translateX(${100 * (index - litCurSlide)}%)`;
-  });
-});
-
-
-//Book Mark Section
-const bookSlides = document.querySelectorAll(".book_slide");
-
-// Loop through slides and set each slide's translateX
-bookSlides.forEach((slide, index) => {
-  slide.style.transform = `translateX(${index * 100}%)`;
-});
-
-// Select next slide button
-const bookNextSlide = document.querySelector(".btn2-next");
-
-// Current slide counter
-let bookCurSlide = 0;
-// Maximum number of slides
-let bookMaxSlide = litSlides.length - 1;
-
-// Add event listener and navigation functionality
-bookNextSlide.addEventListener("click", function () {
-  // Check if the current slide is the last and reset the current slide
-  if (bookCurSlide === bookMaxSlide) {
-    bookCurSlide = 0;
-  } else {
-    bookCurSlide++;
-  }
-
-  // Move the slide by -100%
-  bookSlides.forEach((slide, index) => {
-    slide.style.transform = `translateX(${100 * (index - bookCurSlide)}%)`;
-  });
-});
-
-// Select previous slide button
-const bookPrevSlide = document.querySelector(".btn2-prev");
-
-// Add event listener and navigation functionality
-bookPrevSlide.addEventListener("click", function () {
-  // Check if the current slide is the first and reset the current slide to last
-  if (bookCurSlide === 0) {
-    bookCurSlide = bookMaxSlide;
-  } else {
-    bookCurSlide--;
-  }
-
-  // Move the slide by 100%
-  bookSlides.forEach((slide, index) => {
-    slide.style.transform = `translateX(${100 * (index - bookCurSlide)}%)`;
-  });
-});
-
-
-
 
