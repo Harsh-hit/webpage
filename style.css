@@ -38,21 +38,6 @@
 @media (max-width: 768px) {
 
   /* Adjust styles for smaller screens here */
-  /* header {
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  header h4 {
-    position: absolute;
-    left: 5%;
-    bottom: 1rem;
-    font-size: 1.6rem;
-  } */
-
   /* splash screen */
   .intro {
     position: absolute;
@@ -180,7 +165,7 @@
     object-fit: cover;
     opacity: 0.4;
   }
-  
+
 
   .nav-menu {
     width: 59%;
@@ -1103,6 +1088,7 @@
     font-size: 20px;
 
   }
+
   .contact-element3 {
     width: 60%;
     float: center;
@@ -1942,7 +1928,7 @@
     height: 100vh;
     width: 100%;
   }
-  
+
   video {
     position: absolute;
     top: 0;
@@ -1952,7 +1938,7 @@
     object-fit: cover;
     opacity: 0.4;
   }
-  
+
   /* Adjust styles for larger screens here */
   header {
     position: relative;
@@ -2035,13 +2021,16 @@
   .container {
     padding: 18px;
     width: 100%;
-    overflow: hidden;
     background-color: rgb(21, 21, 21);
     height: 75px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    overflow: hidden;
+  }
+
+  .nav-menu {
+    position: absolute;
+    right: 0;
   }
 
   .navbar-logo {
