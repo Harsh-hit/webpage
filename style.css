@@ -48,10 +48,12 @@
     height: 100%;
     background-color: rgb(21, 21, 21);
     transition: 2s;
+    opacity: 0;
   }
 
   .logo-header {
     position: absolute;
+    opacity: 0;
     font-size: 25px;
     top: 270px;
     left: 50%;
@@ -129,7 +131,9 @@
     top: 10px;
     right: 0px;
   }
-
+  .dd-button span{
+    font-size: 30px;
+  }
   .dd-button:hover {
     background-color: rgb(21, 21, 21);
   }
@@ -156,11 +160,11 @@
   }
 
   .nav-menu {
-    width: 50%;
+    width: 35%;
     color: #cccccc;
     position: absolute;
     top: 100%;
-    left: 0px;
+    right: 0px;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin: 2px 0 0 0;
@@ -281,7 +285,6 @@
     height: 600px;
   }
 
-
   /* EVENTS */
   .our-events-container {
     width: 100%;
@@ -306,7 +309,7 @@
     position: absolute;
     left: 180px;
     font-size: 80px;
-  } 
+  }
 
   .static-logo2 {
     position: absolute;
@@ -881,7 +884,6 @@
     display: flex;
     flex-direction: column;
     height: 800px;
-    /* Consider adjusting the container's height */
     justify-content: center;
     margin: 20px 0;
     width: 200%;
@@ -898,11 +900,10 @@
     /* Spacing between cards */
     overflow: hidden;
     transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
-    height: 80px;
+    height: 100px;
     /* Initial card height */
     width: 100%;
     /* Full width */
-
   }
 
   .card>.row {
@@ -910,7 +911,8 @@
     display: flex;
     flex-wrap: nowrap;
     position: relative;
-    top: 65px;
+    top: 40px;
+    width: 100%;
   }
 
   .card>.row>.icon {
@@ -924,7 +926,7 @@
     margin: 15px;
     height: 50px;
     /* Adjusted height */
-    width: 50px;
+    width: 150px;
   }
 
   .card>.row>.description {
@@ -937,7 +939,6 @@
     transition-delay: 0.3s;
     height: 80px;
     width: 100%;
-    /* Adjust as necessary */
     text-align: center;
     /* Center text */
   }
@@ -989,51 +990,51 @@
   /* contact us */
   .contact-container {
     position: absolute;
-    top: 5600px;
-    font-size: 20px;
+    top: 5450px;
+    left: 50px;
+    font-size: 30px;
   }
 
   .contact-element3 {
-    width: 60%;
+    width: 100%;
     float: center;
     padding: 20px;
-    top: 50%;
     position: relative;
     color: rgb(252, 248, 240);
     top: 50%;
   }
 
+  .contact-element3 h1 {
+    font-size: 40px;
+  }
+
   .contact-element3 p {
-    position: relative;
+    position: absolute;
     color: rgb(252, 248, 240);
-    font-size: 12px;
+    font-size: 20px;
+    left: 20px;
   }
 
   .contacts-container {
     position: absolute;
-    top: 6000px;
-    margin: auto;
-    width: 100%;
-    text-align: center;
-    margin: auto;
-    margin-top: 50px;
+    top: 5500px;
+    left: 90px;
+    padding: 10px 0px;
     background-color: rgb(21, 21, 21);
-
-    /* border: red solid; */
-
-
+    width: max-content;
+    display: flex;
+    align-items: center;
   }
 
   .social-links {
     text-align: center;
     margin: 20px 0px;
-
   }
 
   .social-btn {
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     background: rgb(21, 21, 21);
     margin: 10px;
     border-top-left-radius: 20px;
@@ -1093,10 +1094,70 @@
       left: -10%;
     }
   }
+
+  .gallery2 {
+    position: relative;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    width: 80%;
+    height: 300px;
+    transition: all 400ms;
+  }
+
+  .gallery2:hover .box {
+    filter: grayscale(100%) opacity(24%);
+  }
+
+  .box {
+    position: relative;
+    background: var(--img) center center;
+    background-size: cover;
+    transition: all 400ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gallery2 .box:hover {
+    filter: grayscale(0%) opacity(100%);
+  }
+
+  .gallery2:has(.box-1:hover) {
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+  }
+
+  .gallery2:has(.box-2:hover) {
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+  }
+
+  .gallery2:has(.box-3:hover) {
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+  }
+
+  .gallery2:has(.box-4:hover) {
+    grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
+  }
+
+  .gallery2:has(.box-5:hover) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
+  }
+
+  /*-- Footer Responsive CSS --*/
+  @media (max-width: 576px) {
+    .social-btn {
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+    }
+
+    .social-btn i {
+      line-height: 40px;
+      font-size: 18px;
+    }
+  }
 }
-
-
-
 
 
 
