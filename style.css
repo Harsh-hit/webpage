@@ -143,10 +143,8 @@
   }
 
   #video-box {
-    /* position: absolute;
-    top: 100px; */
-    height: 100vh;
-    width: 100%;
+    height: 600px;
+    width: 200%;
   }
 
   video {
@@ -2106,8 +2104,6 @@
     left: 60px;
   }
 
-
-
   /* EVENTS */
   .our-events-container {
     position: absolute;
@@ -2126,8 +2122,8 @@
   }
 
   .our-events-element2 {
+    position: absolute;
     width: 60%;
-    float: right;
     left: 600px;
     top: 165px;
     z-index: 99;
