@@ -50,7 +50,7 @@
     transition: 2s;
     opacity: 0;
   }
-
+  
   .logo-header {
     position: absolute;
     opacity: 0;
@@ -59,26 +59,26 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
+  
   .logo {
     position: relative;
     display: inline-block;
     bottom: -20px;
     opacity: 0;
   }
-
+  
   .logo.active {
     bottom: 0;
     opacity: 1;
     transition: ease-in-out 0.3s;
   }
-
+  
   .logo.fade {
     bottom: 150px;
     opacity: 0;
     transition: ease-in-out 0.2s;
   }
-
+  
   .intro-image {
     width: 100px;
     height: 80px;
@@ -86,13 +86,24 @@
     top: 235px;
     left: 250px;
   }
-
+  
   .intro-image img {
     width: 90%;
     height: 80px;
     opacity: 0;
   }
-
+  
+  /* Added CSS for side-by-side alignment */
+  .intro-image,
+  .logo-header {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .logo-header {
+    left: calc(50% + 110px); /* Adjusted left position */
+  }
+  
 
   /* Dropdown */
   .navbar-wrapper {
@@ -1930,28 +1941,33 @@
   .logo {
     position: relative;
     display: inline-block;
-    bottom: -20px;
     opacity: 0;
   }
+  .logo-text {
+    display: inline-block;
+    vertical-align: middle;
+}
 
   .logo.active {
     bottom: 0;
     opacity: 1;
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.3s;
   }
 
   .logo.fade {
     bottom: 550px;
     opacity: 0;
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.2s;
   }
+  .intro-image-container {
+    display: inline-block;
+    vertical-align: middle;
+}
 
   .intro-image {
     width: 100px;
-    height: 80px;
-    position: absolute;
-    top: 235px;
-    left: 400px;
+    height: 100px;
+    position: relative;
   }
 
   .intro-image img {
