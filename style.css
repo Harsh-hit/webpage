@@ -1962,7 +1962,7 @@
   .intro-image-container {
     display: inline-block;
     vertical-align: middle;
-}
+  }
 
   .intro-image {
     width: 100px;
@@ -1994,6 +1994,9 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+  }
+  .dd-button {
+    display: none;
   }
 
   .nav-menu {
@@ -2062,9 +2065,9 @@
     font-weight: bolder;
   }
 
+  /* About US section */
   .about-us {
-    position: absolute;
-    top: 790px;
+    position: relative;
     width: 100%;
     height: 750px;
     left: 0px;
@@ -2083,17 +2086,12 @@
   }
 
   .social-media {
-    width: 450px;
-    height: 450px;
-    position: absolute;
-    top: 30px;
+    /* width: 450px;
+    height: 450px; */
+    position: absolute; 
     left: 90px;
   }
 
-  .social-media img {
-    width: 450px;
-    height: 450px;
-  }
 
   .about-us-element h2 {
     position: absolute;
@@ -2120,38 +2118,35 @@
     left: 60px;
   }
 
-  /* EVENTS */
-  .our-events-container {
-    position: absolute;
-    top: 1500px;
-    left: 30px;
-    width: 70%;
-    padding: 20px;
-    height: 500px;
-  }
+/* EVENTS */
+.our-events-container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Horizontally center items */
+  align-items: center; /* Vertically center items */
+}
 
-  .our-events-element1 {
-    width: 60%;
-    float: left;
-    top: 80%;
-    height: 350px;
-  }
+.our-events-element1,
+.our-events-element2 {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 100px;
+  left: -90px;
+}
 
-  .our-events-element2 {
-    position: absolute;
-    width: 60%;
-    left: 600px;
-    top: 165px;
-    z-index: 99;
-    font-size: 110px;
-  }
+.events-logo {
+  /* Add any specific styles for the logo */
+  position: relative;
+  top: 20px;
+  opacity: 0.73;
+  scale: 0.5;
+}
 
-  .static-logo2 {
-    position: absolute;
-    left: 60px;
-    opacity: 0.75;
-    width: 73%;
-  }
+  
+
 
 
   /* AREYY RISHIKESH BOOKMARK CODE IDHE */
@@ -2161,13 +2156,15 @@
   .flex-container {
     display: flex;
     position: absolute;
-    top: 2100px;
+    top: 2200px;
     width: 100%;
-    height: 1000px;
+    height: auto;
+    
   }
 
   .book_container {
     position: absolute;
+    
   }
 
   .book_description {
@@ -2179,6 +2176,7 @@
     top: 65px;
     background-color: transparent;
     padding-right: 50px;
+    
   }
 
   #book_slider-wrapp {
